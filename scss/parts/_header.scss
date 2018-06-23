@@ -1,11 +1,13 @@
 .header {
   position: fixed;
   z-index: 1;
+  width: 100%;
 }
 
 .header__block--outer {
   background-color: $nipiter-green;
-    width: 320px;
+    // width: 320px;
+
 }
 
 .header__block--inner {
@@ -14,7 +16,7 @@
   align-items: center;
   background-color: $nipiter_red;
   height: 53px;
-  width: 320px;
+  // width: 320px;
   padding-left: 18px;
 }
 
@@ -34,7 +36,7 @@ height: 53px;
   @include font-h2();
   background-color: $transparent-green;
   height: 24px;
-  width: 320px;
+  // width: 320px;
   padding-top: 5px;
   padding-bottom: 5px;
 }

@@ -5,15 +5,25 @@ $total_blog_height: calc(100% + 400px);
   position: relative;
   // height: 585px;
   height: 100vh;
-  width: 326px;
+  // width: 326px;
+  width: 100%;
   margin-top: 25px;
   overflow: hidden;
 
 }
 .embed-wordpress {
-  top: -400px;
-  left: -4px;
   position: absolute;
+  top: -390px;
+  left: -4px;
   height: $total_blog_height;
   width: 100%;
+
+  @media all and (min-width: 601px) {
+    top: -540px;
+  }
+
+@media all and (min-width: 801px) {
+  top: -600px;
+}
+
 }

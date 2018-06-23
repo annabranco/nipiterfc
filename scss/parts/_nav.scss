@@ -1,14 +1,15 @@
 .main {
 padding-top: 77px;
+    // width: 100%;
 }
 
 .nav {
   position: fixed;
   z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: $gray;
-  width: 320px;
+  width: 100%;
 }
 
 .nav__link {
@@ -17,11 +18,13 @@ padding-top: 77px;
   justify-content: center;
   align-items: center;
 height: 25px;
-width: 107px;
+width: 33.333%;
 border: 1px solid black;
 text-decoration: none;
 
 &:hover {
+  background-color: $white;
+  border-bottom: 0;
   color: $dark-red;
 }
 }

@@ -40,14 +40,18 @@ table {
   text-transform: uppercase;
 }
 
+.not-available {
+  cursor: not-allowed;
+}
+
 .header {
   position: fixed;
   z-index: 1;
+  width: 100%;
 }
 
 .header__block--outer {
   background-color: #158C3F;
-  width: 320px;
 }
 
 .header__block--inner {
@@ -62,7 +66,6 @@ table {
   align-items: center;
   background-color: #e11b1c;
   height: 53px;
-  width: 320px;
   padding-left: 18px;
 }
 
@@ -91,7 +94,6 @@ table {
   color: #158C3F;
   background-color: rgba(4, 142, 60, 0.25);
   height: 24px;
-  width: 320px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -106,11 +108,10 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   background-color: #e4e4e4;
-  width: 320px;
+  width: 100%;
 }
 
 .nav__link {
@@ -129,12 +130,14 @@ table {
   -ms-flex-align: center;
   align-items: center;
   height: 25px;
-  width: 107px;
+  width: 33.333%;
   border: 1px solid black;
   text-decoration: none;
 }
 
 .nav__link:hover {
+  background-color: #ffffff;
+  border-bottom: 0;
   color: #a11b1b;
 }
 
@@ -145,7 +148,7 @@ table {
   display: -ms-flexbox;
   display: flex;
   height: 69px;
-  width: 320px;
+  width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -172,7 +175,7 @@ table {
 .footer__block--green {
   background-color: #158C3F;
   height: 100%;
-  width: 272px;
+  width: 93.5%;
   padding: 10px 0;
 }
 
@@ -192,23 +195,35 @@ table {
   bottom: 7px;
   background-color: #ffffff;
   height: 13px;
-  width: 320px;
+  width: 100%;
 }
 
 .blog {
   position: relative;
   height: 100vh;
-  width: 326px;
+  width: 100%;
   margin-top: 25px;
   overflow: hidden;
 }
 
 .embed-wordpress {
-  top: -400px;
-  left: -4px;
   position: absolute;
+  top: -390px;
+  left: -4px;
   height: calc(100% + 400px);
   width: 100%;
+}
+
+@media all and (min-width: 601px) {
+  .embed-wordpress {
+    top: -540px;
+  }
+}
+
+@media all and (min-width: 801px) {
+  .embed-wordpress {
+    top: -600px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
