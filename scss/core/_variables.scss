@@ -1,1 +1,134 @@
-$colorBlue: red;
+//COLORS
+$nipiter-green: #158C3F;
+$green: #048e3c;
+$transparent-green: rgba(4, 142, 60, 0.25);
+$nipiter-red: #e11b1c;
+$dark-red: #a11b1b;
+$black: #000000;
+$dark-gray: #4c4c4c;
+$gray: #e4e4e4;
+$white: #ffffff;
+$transparent-white: rgba(255, 255, 255, 0.59);
+
+$twitter-blue: #5a8dbd;
+$facebook-blue: #184f83;
+
+
+// font-family
+@import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Averia+Serif+Libre|Barlow');
+$title: 'Barlow', sans-serif;
+$subtitle: 'Averia Sans Libre', sans-serif;
+$main: 'Averia Serif Libre', serif;
+
+// paddings
+@mixin size--320 {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+@mixin size--768 {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+@mixin size--1200 {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+// styles
+@mixin font-h1 {
+  font-family: $title;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: $transparent-white;
+}
+
+@mixin font-h1--1200 {
+  font-size: 80px;
+  line-height: 0.25;
+}
+
+@mixin font-h2 {
+  font-family: $title;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0.78;
+  color: $nipiter_green;
+}
+
+@mixin font-h2--1200 {
+  font-size: 21px;
+  line-height: 0.67;
+}
+
+@mixin font-h3 {
+  font-family: $subtitle;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  color: $nipiter_green;
+}
+
+@mixin font-h3--1200 {
+  font-size: 20px;
+  line-height: 0.7;
+}
+
+@mixin font-h4 {
+  font-family: $subtitle;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  color: $dark-red;
+}
+
+@mixin font-h4--1200 {
+  font-size: 30px;
+  line-height: 1;
+}
+
+@mixin font-button {
+  font-size: 16px;
+  line-height: 0.88;
+}
+
+@mixin font-button--768 {
+  font-size: 24px;
+  line-height: 0.58;
+}
+
+@mixin font-button--1200 {
+  font-size: 30px;
+  line-height: 0.47;
+}
+
+@mixin font-p {
+  font-family: $main;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2.14;
+  color: $dark-gray;
+}
+
+@mixin font-p--1200 {
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+@mixin font-dorsal {
+  font-family: $title;
+  font-size: 18.5px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: $white;
+}
+
+@mixin font-footer {
+  font-family: $title;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: $white;
+}
