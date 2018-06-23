@@ -1,6 +1,10 @@
+@import 'core/variables';
+@import 'core/reset';
 @import 'core/settings';
-
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat #fff;
-	height: 100vh;
-}
+@import 'parts/header';
+@import 'parts/nav';
+@import 'parts/footer';
+@import 'pages/base';
+@import 'pages/news';
+@import 'pages/players';
+@import 'pages/contact';
