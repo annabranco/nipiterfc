@@ -35,7 +35,7 @@ gulp.task('styles', function(done) {
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.scss.dest))
     .pipe(browserSync.reload({ stream:true }))
-    .pipe(notify({message: 'CSS OK', onLast: true}));
+    // .pipe(notify({message: 'CSS OK', onLast: true}));
   done();
 });
 
@@ -59,7 +59,7 @@ gulp.task('styles-min', function(done) {
       cascade: false
     }))
     .pipe(gulp.dest(config.scss.dest))
-    .pipe(notify({message: 'CSS MIN OK', onLast: true}));
+    // .pipe(notify({message: 'CSS MIN OK', onLast: true}));
   done();
 });
 
