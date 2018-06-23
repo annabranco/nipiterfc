@@ -1,6 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Averia+Serif+Libre|Barlow");/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}/* HTML5 display-role reset for older browsers */article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
 body {
-  background: url("../images/logo-adalab-80px.png") center center no-repeat #fff;
+  line-height: 1;
+}
+
+ol,ul {
+  list-style: none;
+}
+
+blockquote,q {
+  quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.header {
+  position: fixed;
+}
+
+.header__block--outer {
+  background-color: #158C3F;
+  width: 320px;
+}
+
+.header__block--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #e11b1c;
+  height: 53px;
+  width: 320px;
+  padding-left: 18px;
+}
+
+.header__title {
+  font-family: "Barlow", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.59);
+  padding-bottom: 5px;
+  color: rgba(255, 255, 255, 0.59);
+}
+
+.header__img {
+  display: inline;
+  height: 53px;
+}
+
+.header__titlebar {
+  padding-left: 18px;
+  padding-right: 18px;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0.78;
+  color: #158C3F;
+  background-color: rgba(4, 142, 60, 0.25);
+  height: 24px;
+  width: 320px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.main {
+  padding-top: 77px;
+}
+
+.nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #e4e4e4;
+  width: 320px;
+}
+
+.nav__link {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  color: #158C3F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 25px;
+  width: 107px;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #a11b1b;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 69px;
+  width: 320px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #ffffff;
+}
+
+.footer__img {
+  z-index: 1;
+  position: absolute;
+  left: 18px;
+  bottom: 7px;
+  height: 61px;
+}
+
+.footer__block--red {
+  background-color: #e11b1c;
+  height: 100%;
+  width: 46px;
+}
+
+.footer__block--green {
+  background-color: #158C3F;
+  height: 100%;
+  width: 272px;
+  padding: 10px 0;
+}
+
+.footer__txt {
+  font-family: "Barlow", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff;
+  z-index: 1;
+  padding-right: 18px;
+  text-align: right;
+}
+
+.footer__whitebar {
+  position: absolute;
+  bottom: 7px;
+  background-color: #ffffff;
+  height: 13px;
+  width: 320px;
+}
+
+.blog {
+  position: relative;
   height: 100vh;
+  width: 326px;
+  margin-top: 25px;
+  overflow: hidden;
+}
+
+.embed-wordpress {
+  top: -400px;
+  left: -4px;
+  position: absolute;
+  height: calc(100% + 400px);
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
