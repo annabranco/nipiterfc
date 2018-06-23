@@ -1,0 +1,49 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  height: 69px;
+  width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $white;
+  // background: $gray;
+}
+
+.footer__img {
+  z-index: 1;
+position: absolute;
+left: 18px;
+bottom: 7px;
+height: 61px;
+
+}
+
+.footer__block--red {
+  background-color: $nipiter_red;
+  height: 100%;
+  width: 46px;
+}
+
+.footer__block--green {
+  background-color: $nipiter-green;
+  height: 100%;
+    width: 272px;
+    padding: 10px 0;
+}
+
+.footer__txt {
+  @include font-footer();
+  z-index: 1;
+padding-right: 18px;
+  text-align: right;
+}
+
+.footer__whitebar {
+  position: absolute;
+  bottom: 7px;
+background-color: $white;
+height: 13px;
+width: 320px;
+
+}

@@ -1,0 +1,26 @@
+.main {
+padding-top: 77px;
+}
+
+.nav {
+  position: fixed;  
+  display: flex;
+  justify-content: center;
+  background-color: $gray;
+  width: 320px;
+}
+
+.nav__link {
+  @include font-h3();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 25px;
+width: 107px;
+border: 1px solid black;
+text-decoration: none;
+
+&:hover {
+  color: $dark-red;
+}
+}

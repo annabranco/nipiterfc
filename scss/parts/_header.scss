@@ -1,0 +1,39 @@
+.header {
+  position: fixed;
+}
+
+.header__block--outer {
+  background-color: $nipiter-green;
+    width: 320px;
+}
+
+.header__block--inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $nipiter_red;
+  height: 53px;
+  width: 320px;
+  padding-left: 18px;
+}
+
+.header__title {
+@include font-h1();
+padding-bottom: 5px;
+color: $transparent-white;
+}
+
+.header__img {
+display: inline;
+height: 53px;
+}
+
+.header__titlebar {
+  @include size--320();
+  @include font-h2();
+  background-color: $transparent-green;
+  height: 24px;
+  width: 320px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
