@@ -36,14 +36,6 @@ table {
   border-spacing: 0;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
-.not-available {
-  cursor: not-allowed;
-}
-
 .header {
   position: fixed;
   z-index: 1;
@@ -175,7 +167,7 @@ table {
 .footer__block--green {
   background-color: #158C3F;
   height: 100%;
-  width: 93.5%;
+  width: calc(100vw - 46px - 2px);
   padding: 10px 0;
 }
 
@@ -200,7 +192,7 @@ table {
 
 .blog {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 32px);
   width: 100%;
   margin-top: 25px;
   overflow: hidden;
@@ -212,6 +204,14 @@ table {
   left: -4px;
   height: calc(100% + 400px);
   width: 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.not-available {
+  cursor: not-allowed;
 }
 
 @media all and (min-width: 601px) {
