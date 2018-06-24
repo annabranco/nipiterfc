@@ -1,5 +1,7 @@
 $blog__outer-height: calc(100vh - 32px);
+$blog__outer-width: calc(100vw - 62px);
 $blog__embed-height: calc(100% + 400px);
+
 
 .blog {
   // z-index: -1;
@@ -7,9 +9,19 @@ $blog__embed-height: calc(100% + 400px);
   // height: 585px;
   height: $blog__outer-height;
   // width: 326px;
-  width: 100%;
+  width: $blog__outer-width;
+  margin: 0 auto;
   margin-top: 25px;
   overflow: hidden;
+
+
+    @media all and (min-width: 601px) {
+      // top: -540px;
+    }
+
+  @media all and (min-width: 801px) {
+    // top: -600px;
+  }
 
 }
 .embed-wordpress {

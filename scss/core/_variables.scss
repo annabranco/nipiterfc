@@ -13,28 +13,11 @@ $transparent-white: rgba(255, 255, 255, 0.59);
 $twitter-blue: #5a8dbd;
 $facebook-blue: #184f83;
 
-
 // font-family
 @import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Averia+Serif+Libre|Barlow');
 $title: 'Barlow', sans-serif;
 $subtitle: 'Averia Sans Libre', sans-serif;
 $main: 'Averia Serif Libre', serif;
-
-// paddings
-@mixin size--320 {
-  padding-left: 18px;
-  padding-right: 18px;
-}
-
-@mixin size--768 {
-  padding-left: 90px;
-  padding-right: 90px;
-}
-
-@mixin size--1200 {
-  padding-left: 140px;
-  padding-right: 140px;
-}
 
 // styles
 @mixin font-h1 {

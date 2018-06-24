@@ -14,32 +14,69 @@ $footer__height-total: 69px;
 .footer__img {
   z-index: 1;
 position: absolute;
-left: 18px;
+left: $size--320;
 bottom: 7px;
 height: 61px;
+
+@media all and (min-width: 768px) {
+left: $size--768;
+}
+
+@media all and (min-width: 1200px) {
+left: $size--1200;
+}
 
 }
 
 .footer__block--red {
   background-color: $nipiter_red;
   height: 100%;
-  width: 46px;
+  width: $size--320 + 15px;
+
+  @media all and (min-width: 768px) {
+  width: $size--768 + 15px;
+  }
+
+  @media all and (min-width: 1200px) {
+  width: $size--1200 + 15px;
+  }
 }
 
-$footer__block--green-size: calc(100vw - 46px - 2px); // (screen - size_of_red - blank_strip);
+$footer__block--green-size320: calc(100vw - 15px - 2px - #{$size--320};
+$footer__block--green-size768: calc(100vw - 15px - 2px - #{$size--768});
+$footer__block--green-size1200: calc(100vw - 15px - 2px - #{$size--1200});
+
+// $footer__block--green-size: calc(90vw); // (screen - size_of_red - blank_strip);
+
 
 .footer__block--green {
   background-color: $nipiter-green;
   height: 100%;
-    width: $footer__block--green-size;
+    width: $footer__block--green-size320;
     padding: 10px 0;
+
+    @media all and (min-width: 768px) {
+    width: $footer__block--green-size768;
+    }
+
+    @media all and (min-width: 1200px) {
+    width: $footer__block--green-size1200;
+    }
 }
 
 .footer__txt {
   @include font-footer();
   z-index: 1;
-padding-right: 18px;
+padding-right: $size--320;
   text-align: right;
+
+  @media all and (min-width: 768px) {
+  padding-right: $size--768;
+  }
+
+  @media all and (min-width: 1200px) {
+  padding-right: $size--1200;
+  }
 }
 
 .footer__whitebar {

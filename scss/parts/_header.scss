@@ -17,7 +17,19 @@
   background-color: $nipiter_red;
   height: 53px;
   // width: 320px;
-  padding-left: 18px;
+  padding-left: $size--320;
+
+  @media all and (min-width: 768px) {
+  padding-left: $size--768;
+  margin-right: $size--768 - 31px;
+
+  }
+
+  @media all and (min-width: 1200px) {
+  padding-left: $size--1200;
+  margin-right: $size--1200 - 31px;
+
+  }
 }
 
 .header__title {
@@ -29,14 +41,29 @@ color: $transparent-white;
 .header__img {
 display: inline;
 height: 53px;
+//
+// @media all and (min-width: 768px) {
+// margin-right: $size--768 - 31px;
+// }
+//
+// @media all and (min-width: 1200px) {
+// margin-right: $size--1200 - 31px;
+// }
 }
 
 .header__titlebar {
-  @include size--320();
   @include font-h2();
   background-color: $transparent-green;
   height: 24px;
   // width: 320px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px $size--320;
+
+  @media all and (min-width: 768px) {
+  padding: 5px $size--768;
+  }
+
+  @media all and (min-width: 1200px) {
+  padding: 5px $size--1200;
+  }
+
 }
