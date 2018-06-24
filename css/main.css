@@ -36,6 +36,15 @@ table {
   border-spacing: 0;
 }
 
+.main {
+  padding-top: 77px;
+}
+
+.background--strips {
+  background-image: url(../images/layout/background_320px.jpg);
+  background-size: contain;
+}
+
 .header {
   position: fixed;
   z-index: 1;
@@ -58,7 +67,7 @@ table {
   align-items: center;
   background-color: #e11b1c;
   height: 53px;
-  padding-left: 18px;
+  padding-left: 31px;
 }
 
 .header__title {
@@ -77,8 +86,6 @@ table {
 }
 
 .header__titlebar {
-  padding-left: 18px;
-  padding-right: 18px;
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   font-weight: 600;
@@ -86,12 +93,7 @@ table {
   color: #158C3F;
   background-color: rgba(4, 142, 60, 0.25);
   height: 24px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.main {
-  padding-top: 77px;
+  padding: 5px 31px;
 }
 
 .nav {
@@ -153,7 +155,7 @@ table {
 .footer__img {
   z-index: 1;
   position: absolute;
-  left: 18px;
+  left: 31px;
   bottom: 7px;
   height: 61px;
 }
@@ -167,7 +169,7 @@ table {
 .footer__block--green {
   background-color: #158C3F;
   height: 100%;
-  width: calc(100vw - 46px - 2px);
+  width: calc(100vw - 15px - 2px - 31px);
   padding: 10px 0;
 }
 
@@ -178,7 +180,7 @@ table {
   line-height: 1.6;
   color: #ffffff;
   z-index: 1;
-  padding-right: 18px;
+  padding-right: 31px;
   text-align: right;
 }
 
@@ -193,7 +195,8 @@ table {
 .blog {
   position: relative;
   height: calc(100vh - 32px);
-  width: 100%;
+  width: calc(100vw - 62px);
+  margin: 0 auto;
   margin-top: 25px;
   overflow: hidden;
 }
@@ -214,15 +217,75 @@ table {
   cursor: not-allowed;
 }
 
+@media all and (min-width: 372px) {
+  .background--strips {
+    background-image: url(../images/layout/background_1200px.jpg);
+  }
+}
+
 @media all and (min-width: 601px) {
   .embed-wordpress {
     top: -540px;
   }
 }
 
+@media all and (min-width: 768px) {
+  .header__block--inner {
+    padding-left: 90px;
+    margin-right: 59px;
+  }
+
+  .header__titlebar {
+    padding: 5px 90px;
+  }
+
+  .footer__img {
+    left: 90px;
+  }
+
+  .footer__block--red {
+    width: 105px;
+  }
+
+  .footer__block--green {
+    width: calc(100vw - 15px - 2px - 90px);
+  }
+
+  .footer__txt {
+    padding-right: 90px;
+  }
+}
+
 @media all and (min-width: 801px) {
   .embed-wordpress {
     top: -600px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .header__block--inner {
+    padding-left: 140px;
+    margin-right: 109px;
+  }
+
+  .header__titlebar {
+    padding: 5px 140px;
+  }
+
+  .footer__img {
+    left: 140px;
+  }
+
+  .footer__block--red {
+    width: 155px;
+  }
+
+  .footer__block--green {
+    width: calc(100vw - 15px - 2px - 140px);
+  }
+
+  .footer__txt {
+    padding-right: 140px;
   }
 }
 

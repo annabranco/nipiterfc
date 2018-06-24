@@ -1,1 +1,23 @@
-$colorBlue: red;
+// horizontal padding/margin for formats
+$size--320: 31px;
+$size--768: 90px;
+$size--1200: 140px;
+
+
+
+
+.main {
+padding-top: 77px;
+}
+
+.background--strips {
+  background-image: url(../images/layout/background_320px.jpg);
+// background-repeat: no-repeat;
+background-size: contain;
+
+  @media all and (min-width: 372px) {
+    background-image: url(../images/layout/background_1200px.jpg);
+
+
+  }
+}
