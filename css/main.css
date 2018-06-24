@@ -198,7 +198,8 @@ table {
   width: calc(100vw - (31px * 2));
   margin: 0 auto;
   margin-top: 25px;
-  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
 
 .blog__inner {

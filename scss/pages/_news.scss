@@ -16,7 +16,9 @@ $blog__embed-height: calc(100% + 400px);
   width: $blog__outer-width320;
   margin: 0 auto;
   margin-top: 25px;
-  overflow: hidden;
+ -webkit-overflow-scrolling: touch;
+  // overflow: hidden;
+  overflow-y: scroll;
 
     @media all and (min-width: 601px) {
   width: $blog__outer-width768;
