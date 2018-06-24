@@ -42,7 +42,7 @@ table {
 
 .background--strips {
   background-image: url(../images/layout/background_320px.jpg);
-  background-size: auto;
+  background-size: 100%;
 }
 
 .header {

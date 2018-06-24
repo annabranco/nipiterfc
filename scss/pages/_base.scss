@@ -9,7 +9,7 @@ padding-top: 77px;
 
 .background--strips {
   background-image: url(../images/layout/background_320px.jpg);
-background-size:  auto;
+background-size: 100%;
 
   @media all and (min-width: 372px) {
     background-image: url(../images/layout/background_1200px.jpg);
