@@ -1,11 +1,13 @@
 $blog__outer-height: calc(100vh - 32px);
+$blog__outer-height1081: calc(100vh + 50px);
+
 $blog__outer-width320: calc(100vw - (#{$size--320} * 2));
 $blog__outer-width768: calc(100vw - (#{$size--768} *2 ));
 $blog__outer-width1200: calc(100vw - (#{$size--1200} *2 ));
 
 $blog__embed-height: calc(100% + 400px);
 
-.blog {
+.blog__outer {
   // z-index: -1;
   position: relative;
   // height: 585px;
@@ -24,20 +26,33 @@ $blog__embed-height: calc(100% + 400px);
   width: $blog__outer-width1200;
   }
 
+  @media all and (min-width: 1081px) {
+  height: $blog__outer-height1081;
+  }
+
+
 }
-.embed-wordpress {
+.blog__inner {
   position: absolute;
   top: -390px;
   left: -4px;
   height: $blog__embed-height;
   width: 100%;
 
-  @media all and (min-width: 601px) {
+  @media all and (min-width: 780px) {
     top: -540px;
   }
 
 @media all and (min-width: 801px) {
-  top: -600px;
+  top: -370px;
+}
+
+@media all and (min-width: 881px) {
+  top: -540px;
+}
+
+@media all and (min-width: 1081px) {
+  top: -620px;
 }
 
 }

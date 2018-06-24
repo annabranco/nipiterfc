@@ -192,7 +192,7 @@ table {
   width: 100%;
 }
 
-.blog {
+.blog__outer {
   position: relative;
   height: calc(100vh - 32px);
   width: calc(100vw - (31px * 2));
@@ -201,7 +201,7 @@ table {
   overflow: hidden;
 }
 
-.embed-wordpress {
+.blog__inner {
   position: absolute;
   top: -390px;
   left: -4px;
@@ -224,12 +224,8 @@ table {
 }
 
 @media all and (min-width: 601px) {
-  .blog {
+  .blog__outer {
     width: calc(100vw - (90px *2 ));
-  }
-
-  .embed-wordpress {
-    top: -540px;
   }
 }
 
@@ -260,13 +256,35 @@ table {
   }
 }
 
+@media all and (min-width: 780px) {
+  .blog__inner {
+    top: -540px;
+  }
+}
+
 @media all and (min-width: 801px) {
-  .blog {
+  .blog__outer {
     width: calc(100vw - (140px *2 ));
   }
 
-  .embed-wordpress {
-    top: -600px;
+  .blog__inner {
+    top: -370px;
+  }
+}
+
+@media all and (min-width: 881px) {
+  .blog__inner {
+    top: -540px;
+  }
+}
+
+@media all and (min-width: 1081px) {
+  .blog__outer {
+    height: calc(100vh + 50px);
+  }
+
+  .blog__inner {
+    top: -620px;
   }
 }
 
