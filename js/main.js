@@ -10,6 +10,6 @@ function ok(a,b) {
   formats = b;
 }
 
-ok("solo noticias","solo móvil");
+ok("noticias & contacto","solo móvil");
 
 alert("En construcción.\n\nPáginas que puedes ver: " + pages + "\n\nFormatos que puedes ver: " + formats );
