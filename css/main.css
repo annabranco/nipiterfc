@@ -129,10 +129,14 @@ table {
   text-decoration: none;
 }
 
-.nav__link:hover {
+.nav__link:hover,.nav__link.nav__link-active {
   background-color: #ffffff;
   border-bottom: 0;
   color: #a11b1b;
+}
+
+.nav__link.nav__link-active {
+  cursor: default;
 }
 
 .footer {

@@ -12,14 +12,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-height: 25px;
-width: 33.333%;
-border: 1px solid black;
-text-decoration: none;
+  height: 25px;
+  width: 33.333%;
+  border: 1px solid black;
+  text-decoration: none;
 
-&:hover {
-  background-color: $white;
-  border-bottom: 0;
-  color: $dark-red;
+  &:hover, &.nav__link-active {
+    background-color: $white;
+    border-bottom: 0;
+    color: $dark-red;
+  }
+
+&.nav__link-active {
+  cursor: default;
 }
 }
