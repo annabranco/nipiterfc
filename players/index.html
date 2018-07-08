@@ -1,98 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>NiPiter Football Club</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-</head>
-<body>
-	<header class="header">
-		<div class="header__block--outer">
-			<div class="header__block--inner">
-				<h1 class="header__title">NPFC</h1>
-				<img class="header__img" src="../images/layout/nipiter_bar_top.jpg" alt="">
-			</div>
-		</div>
-		<div class="header__titlebar">NiPiter Football Club</div>
-	</header>
 
-	<main class="main background--strips">
-		<nav class="nav uppercase">
-			<a class="nav__link" href="/index.html">Noticias</a>
-			<a class="nav__link nav__link-active" href="players/index.html">Plantilla</a>
-			<a class="nav__link" href="../contacto.html">Contacto</a>
-		</nav>
+	<head>
+		<meta charset="UTF-8">
+		<title>NiPiter Football Club</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	</head>
 
-		<section class="players">
-
-			<div class="player__outer player--order-01">
-				<div class="player__box--photo"><img class="player__photo" src="../images/players/1-diana.jpg" alt="Diana"></div>
-				<div class="player__box--details">
-					<h4 class="player__name">Diana</h4>
-					<p class="player__info">Portera</p>
-					<p class="player__info">Dorsal #1</p>
-					<p class="player__box--birthplace player__info"><span class="">Themyscira</span><img class="player__flag" src="../images/players/flags/flag-rainbow.png" alt="Bandera LGBT"> </p>
-					<p class="player__info">Desde 2015</p>
-					<div class="social-networks">
-						<i class="fab fa-twitter twitter"></i>
-						<i class="fab fa-facebook-square facebook"></i>
-						<i class="fab fa-instagram instagram"></i>
-					</div>
+	<body>
+		<header class="header">
+			<div class="header__block--outer">
+				<div class="header__block--inner">
+					<h1 class="header__title">NPFC</h1>
+					<img class="header__img" src="../images/layout/nipiter_bar_top.jpg" alt="">
 				</div>
 			</div>
+			<div class="header__titlebar">NiPiter Football Club</div>
+		</header>
 
-			<div class="player__outer player--order-02">
-				<div class="player__box--photo"><img class="player__photo" src="../images/players/4-lara.jpg" alt="Diana"></div>
-				<div class="player__box--details">
-					<h4 class="player__name">Lara</h4>
-					<p class="player__info">Defensa Central</p>
-					<p class="player__info">Dorsal #4</p>
-					<p class="player__box--birthplace player__info player__info--right"><span class="player--align-right">Wimbledom</span><img class="player__flag" src="../images/players/flags/flag-england.png" alt="Bandera LGBT"> </p>
-					<p class="player__info">Desde 2018</p>
-					<div class="social-networks social-networks--right">
-						<i class="fab fa-twitter twitter"></i>
-						<i class="fab fa-facebook-square facebook"></i>
-						<i class="fab fa-instagram instagram"></i>
+		<main class="main background--strips">
+			<div class="nav__menu--title uppercase">Menu <i class="fas fa-bars nav__menu-title-hamburguer"></i></div>
+			<nav class="nav uppercase">
+				<a class="nav__link" href="../index.html">Noticias</a>
+				<a class="nav__link nav__link-active" href="index.html">Plantilla</a>
+				<a class="nav__link" href="../contacto.html">Contacto</a>
+			</nav>
+
+			<section class="players">
+
+				<!-- Para alterar orden
+1. En player__outer, colocar player--order-XX con la orden deseada;
+Ordenes pares:
+
+2. Em player__box--birthplace añadir player__info--right;
+
+3. Em player__city añadir: player--align-right;
+
+4. Em social-networks, añadir social-networks--right;
+
+Ordenes impares:
+
+Borrar las clases añadidas en las pares.
+ -->
+
+				<div class="player__outer player--order-01 row no-gutters">
+					<div class="player__box--photo col-6 col-sm-4 col-md-3"><img class="player__photo" src="../images/players/1-diana.jpg" alt="Diana"></div>
+					<div class="player__box--details col-6 col-sm-8 col-md-6">
+						<h4 class="player__name">Diana</h4>
+						<p class="player__info">Portera</p>
+						<p class="player__info">Dorsal #1</p>
+						<p class="player__box--birthplace player__info"><span class="player__city">Themyscira</span><img class="player__flag" src="../images/players/flags/flag-rainbow.png" alt="Bandera LGBT"> </p>
+						<p class="player__info">Desde 2015</p>
+						<div class="social-networks">
+							<i class="fab fa-twitter twitter"></i>
+							<i class="fab fa-facebook-square facebook"></i>
+							<i class="fab fa-instagram instagram"></i>
+						</div>
+					</div>
+					<div class="outer__footbal--field col-md-3">
+						<div class="footbal--field"><span class="footbal--field-position position--keeper">1</span></div>
 					</div>
 				</div>
-			</div>
 
-			<div class="player__outer player--order-03">
-				<div class="player__box--photo"><img class="player__photo" src="../images/players/9-merida.jpg" alt="Diana"></div>
-				<div class="player__box--details">
-					<h4 class="player__name">Merida</h4>
-					<p class="player__info">Delantera</p>
-					<p class="player__info">Dorsal #9</p>
-					<p class="player__box--birthplace player__info"><span class="">DunBroch</span><img class="player__flag" src="../images/players/flags/flag-scotland.png" alt="Bandera LGBT"> </p>
-					<p class="player__info">Desde 2016</p>
-					<div class="social-networks">
-						<i class="fab fa-twitter twitter"></i>
-						<i class="fab fa-facebook-square facebook"></i>
-						<i class="fab fa-instagram instagram"></i>
+				<div class="player__outer player--order-02 row no-gutters">
+					<div class="player__box--photo col-6 col-sm-4 col-md-3"><img class="player__photo" src="../images/players/4-lara.jpg" alt="Diana"></div>
+					<div class="player__box--details col-6 col-sm-8 col-md-6">
+						<h4 class="player__name">Lara</h4>
+						<p class="player__info">Defensa Central</p>
+						<p class="player__info">Dorsal #4</p>
+						<p class="player__box--birthplace player__info player__info--right"><span class="player__city player--align-right">Wimbledom</span><img class="player__flag" src="../images/players/flags/flag-england.png" alt="Bandera LGBT"> </p>
+						<p class="player__info">Desde 2018</p>
+						<div class="social-networks social-networks--right">
+							<i class="fab fa-twitter twitter"></i>
+							<i class="fab fa-facebook-square facebook"></i>
+							<i class="fab fa-instagram instagram"></i>
+						</div>
+					</div>
+					<div class="outer__footbal--field col-md-3">
+						<div class="footbal--field"><span class="footbal--field-position position--fullback">4</span></div>
 					</div>
 				</div>
-			</div>
 
-			<div class="player__outer player--order-04">
-				<div class="player__box--photo"><img class="player__photo" src="../images/players/13-lisa.jpg" alt="Diana"></div>
-				<div class="player__box--details">
-					<h4 class="player__name">Lisa</h4>
-					<p class="player__info">Medio Izquierda / Central</p>
-					<p class="player__info">Dorsal #13</p>
-					<p class="player__box--birthplace player__info player__info--right"><span class="player--align-right">Springfield</span><img class="player__flag" src="../images/players/flags/flag-usa.png" alt="Bandera LGBT"> </p>
-					<p class="player__info">Desde 2018</p>
-					<div class="social-networks social-networks--right">
-						<i class="fab fa-twitter twitter"></i>
-						<i class="fab fa-facebook-square facebook"></i>
-						<i class="fab fa-instagram instagram"></i>
+				<div class="player__outer player--order-03 row no-gutters">
+					<div class="player__box--photo col-6 col-sm-4 col-md-3"><img class="player__photo" src="../images/players/9-merida.jpg" alt="Diana"></div>
+					<div class="player__box--details col-6 col-sm-8 col-md-6">
+						<h4 class="player__name">Merida</h4>
+						<p class="player__info">Delantera</p>
+						<p class="player__info">Dorsal #9</p>
+						<p class="player__box--birthplace player__info"><span class="player__city">DunBroch</span><img class="player__flag" src="../images/players/flags/flag-scotland.png" alt="Bandera LGBT"> </p>
+						<p class="player__info">Desde 2016</p>
+						<div class="social-networks">
+							<i class="fab fa-twitter twitter"></i>
+							<i class="fab fa-facebook-square facebook"></i>
+							<i class="fab fa-instagram instagram"></i>
+						</div>
+					</div>
+					<div class="outer__footbal--field col-md-3">
+						<div class="footbal--field"><span class="footbal--field-position position--striker">9</span></div>
 					</div>
 				</div>
-			</div>
 
-		</section>
-	</main>
+				<div class="player__outer player--order-04 row no-gutters">
+					<div class="player__box--photo col-6 col-sm-4 col-md-3"><img class="player__photo" src="../images/players/13-lisa.jpg" alt="Diana"></div>
+					<div class="player__box--details col-6 col-sm-8 col-md-6">
+						<h4 class="player__name">Lisa</h4>
+						<p class="player__info">Medio Izquierda / Central</p>
+						<p class="player__info">Dorsal #13</p>
+						<p class="player__box--birthplace player__info player__info--right"><span class="player__city player--align-right">Springfield</span><img class="player__flag" src="../images/players/flags/flag-usa.png" alt="Bandera LGBT"> </p>
+						<p class="player__info">Desde 2018</p>
+						<div class="social-networks social-networks--right">
+							<i class="fab fa-twitter twitter"></i>
+							<i class="fab fa-facebook-square facebook"></i>
+							<i class="fab fa-instagram instagram"></i>
+						</div>
+					</div>
+					<div class="outer__footbal--field col-md-3">
+						<div class="footbal--field"><span class="footbal--field-position position--midfielder">13</span></div>
+					</div>
+				</div>
+
+			</section>
+		</main>
 
 		<footer class="footer">
 			<img class="footer__img" src="../images/layout/nipiter_bar_bottom.jpg" alt="">
@@ -111,4 +142,5 @@
 		</footer>
 
 	</body>
-	</html>
+
+</html>

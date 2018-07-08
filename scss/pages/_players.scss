@@ -1,40 +1,39 @@
 .players {
-margin: 40px 10vw;
-display: flex;
-flex-direction: column;
-
-
+  display       : flex;
+  flex-direction: column;
+  margin        : 40px 10vw;
 }
+
 .player__outer {
-display: flex;
-width: 100%;
-padding: 30px 0;
-border-bottom: 1px  solid $gray;
+  display      : flex;
+  border-bottom: 1px solid $gray;
+  width        : 100%;
+  padding      : 30px 0;
 }
 
 .player--order-01 {
-order: 1;
+  order: 1;
 }
+
 .player--order-02 {
-order: 2;
-text-align: right;
-flex-direction: row-reverse;
-justify-content: flex-end;
+  order          : 2;
+  flex-direction : row-reverse;
+  justify-content: flex-start;
+  text-align     : right;
 }
+
 .player--order-03 {
-order: 3;
+  order: 3;
 }
+
 .player--order-04 {
-order: 4;
-text-align: right;
-flex-direction: row-reverse;
-justify-content: flex-end;
+  order          : 4;
+  flex-direction : row-reverse;
+  justify-content: flex-start;
+  text-align     : right;
 }
 
-
-.player__box--photo {
-
-}
+.player__box--photo {}
 
 .player--align-right {
   order: 2;
@@ -44,64 +43,126 @@ justify-content: flex-end;
   border: 5px solid $gray;
 }
 
-
 .player__box--details {
-display: flex;
-flex-direction: column;
-width: 70%;
+  display       : flex;
+  flex-direction: column;
+  width         : 70%;
 
 }
 
 .player__name {
-@include font-h4();
-margin-left: 16px;
-margin-right: 16px;
+  @include font-h4();
+  margin-left : 16px;
+  margin-right: 16px;
 }
 
 .player__info {
-@include font-p();
-margin-left: 16px;
-margin-right: 16px;
+  @include font-p();
+  margin-left  : 16px;
+  margin-right : 16px;
+  margin-bottom: 0;
 }
 
 .player__box--birthplace {
-display: flex;
-align-items: center;
-vertical-align: middle;
+  display       : flex;
+  align-items   : center;
+  vertical-align: middle;
 }
 
 .player__flag {
-width: 24px;
-height: 18px;
-margin: 0 10px;
+  margin: 0 10px;
+  width : 24px;
+  height: 18px;
 }
 
 .player__info--right {
-justify-content: flex-end;
+  flex-direction : row-reverse;
+  justify-content: flex-start;
 }
 
 .social-networks {
   @include font-button();
-  // margin-left: 16px;
-  // margin-right: 16px;
-  display: flex;
+  display        : flex;
   justify-content: space-around;
-  align-items: flex-end;
-  height: 25px;
-  max-width: 200px,
-
+  align-items    : flex-end;
+  height         : 25px;
+  max-width      : 200px,;
 }
 
 .social-networks--right {
   flex-direction: row-reverse;
+
+  @media all and (min-width:576px) {
+    margin-left: 156px;
+  }
+  @media all and (min-width:768px) {
+    margin-left: 66px;
+  }
 }
 
 .twitter {
-color: $twitter-blue;
+  color: $twitter-blue;
 }
+
 .facebook {
-color: $facebook-blue;
+  color: $facebook-blue;
 }
+
 .instagram {
-color: $dark-red;
+  color: $dark-red;
+}
+
+.footbal--field {
+  margin          : 20px 48px 0 0;
+  background-image: url('../images/layout/footballField.jpg');
+  height          : 153px;
+  width           : 114px;
+}
+
+.outer__footbal--field {
+  display: none;
+  @media all and (min-width:768px) {
+    display: block;
+  }
+}
+
+.footbal--field-position {
+  position       : relative;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  background     : $green;
+  border         : 1px solid;
+  border-radius  : 20px;
+  height         : 28px;
+  width          : 28px;
+  font-size      : 17px;
+  color          : $white;
+}
+
+.position--keeper {
+  position: absolute;
+  bottom  : -5px;
+  left    : 44px;
+}
+
+.position--fullback {
+  position  : absolute;
+  bottom    : 30px;
+  left      : 60px;
+  background: $dark-red;
+}
+
+.position--striker {
+  position  : absolute;
+  top       : 30px;
+  left      : 44px;
+  background: $dark-red;
+}
+
+.position--midfielder {
+  position  : absolute;
+  bottom    : 75px;
+  left      : 10px;
+  background: $dark-red;
 }
