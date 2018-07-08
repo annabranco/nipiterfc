@@ -4,16 +4,15 @@ $size--768: 90px;
 $size--1200: 140px;
 
 .main {
-padding-top: 77px;
+  padding-top: 77px;
 }
 
 .background--strips {
-  background-image: url(../images/layout/background_320px.jpg);
-background-size: 100%;
+  background-image: url('../images/layout/background_320px.jpg');
+  background-size : 100%;
 
   @media all and (min-width: 372px) {
-    background-image: url(../images/layout/background_1200px.jpg);
-
+    background-image: url('../images/layout/background_1200px.jpg');
 
   }
 }

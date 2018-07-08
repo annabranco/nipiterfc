@@ -11,3 +11,11 @@ function ok(a,b) {
 }
 
 ok('todas las páginas ya estan disponibles','solo visualización en formato móvil');
+
+for (var i = 0; i < array.length; i++) {
+  array[i]
+  cl.addEventListener('', );
+}
+
+classList.add('');
+classList.remove('');

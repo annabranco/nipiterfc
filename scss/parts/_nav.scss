@@ -1,29 +1,103 @@
 .nav {
-  position: fixed;
-  z-index: 1;
-  display: flex;
-  justify-content: space-around;
+  z-index         : 1;
+  position        : fixed;
+  display         : flex;
+  justify-content : space-around;
   background-color: $gray;
-  width: 100%;
+  width           : 100%;
+
+  @media all and (min-width: 768px) {
+    flex-direction: column;
+    right         : 90px;
+    width         : 256px;
+    box-shadow    : 0 2px 1px 1px rgba(81, 82, 81, 0.4);
+
+  }
+
+  @media all and (min-width:1200px) {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+  }
+
+  @media all and (max-height:400px) {
+    top: 24px;
+  }
 }
 
 .nav__link {
   @include font-h3();
-  display: flex;
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  height: 25px;
-  width: 33.333%;
-  border: 1px solid black;
+  align-items    : center;
+  border         : 1px solid black;
+  border-top     : 0;
+  height         : 25px;
+  width          : 33.333%;
   text-decoration: none;
 
-  &:hover, &.nav__link-active {
+  &.nav__link-active,
+  &:hover {
     background-color: $white;
-    border-bottom: 0;
-    color: $dark-red;
+    border-bottom   : 0;
+    color           : $dark-red;
+    text-decoration : none;
+
+    @media all and (min-width:768px) {
+      border-bottom: 1px solid black;
+      color        : $dark-red;
+    }
   }
 
-&.nav__link-active {
-  cursor: default;
+  &.nav__link-active {
+    cursor: default;
+  }
+
+  @media all and (min-width:768px) {
+    width: 100%;
+
+    &.nav__link-active {
+      background-color: initial;
+      color           : $green;
+      cursor          : pointer;
+
+      &:hover {
+        background-color: $white;
+        color           : $dark-red;
+      }
+    }
+  }
 }
+
+.nav__menu--title {
+  display: none;
+
+  @media all and (min-width:768px) {
+    @include font-h3();
+    z-index        : 3;
+    position       : fixed;
+    top            : 53px;
+    right          : 90px;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    border         : 1px solid black;
+    background     : $gray;
+    height         : 24px;
+    width          : 256px;
+    color          : $black;
+  }
+
+}
+
+.nav__menu-title-hamburguer {
+  position    : absolute;
+  right       : 0;
+  border      : 1px solid black;
+  border-right: 0;
+  background  : $nipiter-red;
+  height      : 24px;
+  width       : 24px;
+  padding     : 5px;
+  color       : $white;
 }
