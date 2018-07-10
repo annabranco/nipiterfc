@@ -1,3 +1,5 @@
+$nav--1200-height: calc(100vh - 77px - 69px);
+
 .nav {
   z-index         : 1;
   position        : fixed;
@@ -10,19 +12,35 @@
     flex-direction: column;
     right         : 90px;
     width         : 256px;
-    box-shadow    : 0 2px 1px 1px rgba(81, 82, 81, 0.4);
-
   }
 
-  @media all and (min-width:1200px) {
+  @media all and (min-width: 1200px) {
+    position       : fixed;
+    top            : 77px;
+    left           : $size--1200;
     display        : flex;
     align-items    : center;
-    justify-content: center;
+    justify-content: flex-end;
+    border         : 0;
+    border-right   : 2px dashed $gray;
+    box-shadow     : 0 0 0 0;
+    background     : initial;
+    height         : $nav--1200-height;
+    width          : 396px - $size--1200;
+    padding-bottom : 15vh;
+
+    @media all and (max-height: 360px) {
+      margin-top: 20vh;
+    }
   }
 
   @media all and (max-height:400px) {
     top: 24px;
   }
+}
+
+.nav-shadow {
+  box-shadow: -1px 2px 2px 1px rgba(81, 82, 81, 0.3);
 }
 
 .nav__link {
@@ -43,9 +61,14 @@
     color           : $dark-red;
     text-decoration : none;
 
-    @media all and (min-width:768px) {
+    @media all and (min-width: 768px) {
       border-bottom: 1px solid black;
       color        : $dark-red;
+
+      @media all and (min-width: 1200px) {
+        border    : 0;
+        background: rgba(228, 228, 228, 0.4);
+      }
     }
   }
 
@@ -53,7 +76,7 @@
     cursor: default;
   }
 
-  @media all and (min-width:768px) {
+  @media all and (min-width: 768px) {
     width: 100%;
 
     &.nav__link-active {
@@ -67,12 +90,23 @@
       }
     }
   }
+  @media all and (min-width: 1200px) {
+    @include font-h3--1200();
+    margin-top   : 37px;
+    border       : 0;
+    padding-right: 70px;
+
+    @media all and (max-height: 360px) {
+      margin-top: 10px;
+    }
+
+  }
 }
 
 .nav__menu--title {
   display: none;
 
-  @media all and (min-width:768px) {
+  @media all and (min-width: 768px) {
     @include font-h3();
     z-index        : 3;
     position       : fixed;
@@ -88,6 +122,10 @@
     color          : $black;
   }
 
+  @media all and (min-width: 1200px) {
+    display: none;
+  }
+
 }
 
 .nav__menu-title-hamburguer {
@@ -100,4 +138,47 @@
   width       : 24px;
   padding     : 5px;
   color       : $white;
+}
+
+.nav__menu-title-hamburguer {
+  cursor: pointer;
+}
+
+.nav__AllLinks {
+  width: 100%;
+}
+
+.nav__AllLinks--hidden {
+  display: flex;
+  @media all and (min-width: 768px) {
+    display: none;
+  }
+  @media all and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.nav__logo {
+  display: none;
+
+  @media all and (min-width: 1200px) {
+    position: fixed;
+    top     : 130px;
+    left    : $size--1200;
+    display : block;
+    width   : 200px;
+    height  : auto;
+
+    @media all and (max-height: 490px) {
+      display: none;
+    }
+
+    @media all and (max-height: 660px) {
+      width: 120px;
+      top  : 80px;
+      left : $size--1200 + 35px;
+      //display: none;
+    }
+  }
+
 }

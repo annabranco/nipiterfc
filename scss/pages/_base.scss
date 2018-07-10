@@ -3,6 +3,8 @@ $size--320: 31px;
 $size--768: 90px;
 $size--1200: 140px;
 
+$width--1200: calc(100% - 177px - 397px);
+
 .main {
   padding-top: 77px;
 }
@@ -10,9 +12,22 @@ $size--1200: 140px;
 .background--strips {
   background-image: url('../images/layout/background_320px.jpg');
   background-size : 100%;
+  height          : 100vh;
 
   @media all and (min-width: 372px) {
     background-image: url('../images/layout/background_1200px.jpg');
+  }
 
+  @media all and (min-width: 768px) {
+    display        : flex;
+    justify-content: center;
+  }
+
+}
+
+.main__principal {
+
+  @media all and (min-width: 1200px) {
+    margin-left: 397px;
   }
 }

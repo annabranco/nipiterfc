@@ -1,7 +1,21 @@
+/* global $width--1200 */
+
 .players {
   display       : flex;
+  align-items   : center;
   flex-direction: column;
   margin        : 40px 10vw;
+
+  @media all and (min-width: 768px) {
+    width    : 100%;
+    max-width: 700px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin-left : 397px;
+    padding-left: 35px;
+    max-width   : 1200px;
+  }
 }
 
 .player__outer {
@@ -83,21 +97,23 @@
 .social-networks {
   @include font-button();
   display        : flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items    : flex-end;
+  margin         : 0 16px;
   height         : 25px;
-  max-width      : 200px,;
 }
 
 .social-networks--right {
   flex-direction: row-reverse;
+}
 
-  @media all and (min-width:576px) {
-    margin-left: 156px;
+.facebook {
+  margin: 0 50px;
+  @media all and (min-width: 768px) {
+    margin: 0 60px;
+
   }
-  @media all and (min-width:768px) {
-    margin-left: 66px;
-  }
+
 }
 
 .twitter {
@@ -113,7 +129,8 @@
 }
 
 .footbal--field {
-  margin          : 20px 48px 0 0;
+  position        : relative;
+  margin-top      : 20px;
   background-image: url('../images/layout/footballField.jpg');
   height          : 153px;
   width           : 114px;
@@ -121,8 +138,9 @@
 
 .outer__footbal--field {
   display: none;
-  @media all and (min-width:768px) {
-    display: block;
+  @media all and (min-width: 768px) {
+    display        : flex;
+    justify-content: center;
   }
 }
 
@@ -142,27 +160,27 @@
 
 .position--keeper {
   position: absolute;
-  bottom  : -5px;
+  bottom  : -10px;
   left    : 44px;
 }
 
 .position--fullback {
   position  : absolute;
-  bottom    : 30px;
+  bottom    : 20px;
   left      : 60px;
   background: $dark-red;
 }
 
 .position--striker {
   position  : absolute;
-  top       : 30px;
+  top       : 10px;
   left      : 44px;
   background: $dark-red;
 }
 
 .position--midfielder {
   position  : absolute;
-  bottom    : 75px;
+  bottom    : 70px;
   left      : 10px;
   background: $dark-red;
 }
