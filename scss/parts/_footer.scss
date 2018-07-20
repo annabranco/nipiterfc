@@ -70,6 +70,8 @@ $footer__block--green-size: calc(90vw);
 .footer__txt {
   @include font-footer();
   z-index      : 1;
+  margin-bottom: 0;
+
   padding-right: $size--320;
   text-align   : right;
   @media all and (min-width: 768px) {

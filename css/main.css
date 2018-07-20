@@ -226,6 +226,7 @@ table {
   line-height: 1.6;
   color: #ffffff;
   z-index: 1;
+  margin-bottom: 0;
   padding-right: 31px;
   text-align: right;
 }
@@ -264,8 +265,7 @@ table {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 40px 10vw;
-  height: auto;
+  margin: 40px 10vw 100px;
 }
 
 .player__outer {
@@ -597,6 +597,7 @@ table {
   .players {
     width: 100%;
     max-width: 700px;
+    height: auto;
   }
 
   .facebook {
