@@ -150,11 +150,14 @@ $nav--1200-height: calc(100vh - 77px - 69px);
 
 .nav__AllLinks--hidden {
   display: flex;
+
   @media all and (min-width: 768px) {
     display: none;
   }
   @media all and (min-width: 1200px) {
-    display: flex;
+    display       : flex;
+    flex-direction: column;
+
   }
 }
 
