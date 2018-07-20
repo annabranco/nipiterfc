@@ -1,10 +1,9 @@
 'use strict';
 
-var menuTitle = document.querySelector('.nav__menu--title');
-var menuButton = document.querySelector('.nav__menu-title-hamburguer');
-var menuLinks = document.querySelector('.nav__AllLinks');
+const menuTitle = document.querySelector('.nav__menu--title');
+const menuLinks = document.querySelector('.nav__AllLinks');
 
-menuButton.addEventListener('click', toggleMenu);
+menuTitle.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
   menuLinks.classList.toggle('nav__AllLinks--hidden');
