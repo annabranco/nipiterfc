@@ -265,6 +265,7 @@ table {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 40px 10vw;
+  height: auto;
 }
 
 .player__outer {
@@ -404,7 +405,7 @@ table {
 }
 
 .facebook {
-  margin: 0 50px;
+  margin: 0 35px;
 }
 
 .twitter {

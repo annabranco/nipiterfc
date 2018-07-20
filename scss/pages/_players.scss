@@ -5,6 +5,7 @@
   align-items   : center;
   flex-direction: column;
   margin        : 40px 10vw;
+  height        : auto;
 
   @media all and (min-width: 768px) {
     width    : 100%;
@@ -23,7 +24,6 @@
   border-bottom: 1px solid $gray;
   width        : 100%;
   padding      : 30px 0;
-  // height       : 500px;
 }
 
 .player--order-01 {
@@ -108,12 +108,10 @@
 }
 
 .facebook {
-  margin: 0 50px;
+  margin: 0 35px;
   @media all and (min-width: 768px) {
     margin: 0 60px;
-
   }
-
 }
 
 .twitter {
