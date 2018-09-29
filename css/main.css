@@ -180,7 +180,14 @@ table {
 }
 
 .nav__logo {
-  display: none;
+  display: block;
+  position: fixed;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  width: 65px;
+  height: auto;
 }
 
 .footer {
@@ -721,11 +728,10 @@ table {
   }
 
   .nav__logo {
-    position: fixed;
     top: 130px;
-    left: 90px;
+    left: 240px;
     display: block;
-    width: 300px;
+    width: 200px;
     height: auto;
   }
 
@@ -779,9 +785,9 @@ table {
 
 @media all and (min-width: 1200px) and (max-height: 660px) {
   .nav__logo {
-    width: 200px;
+    width: 100px;
     top: 100px;
-    left: 150px;
+    left: 230px;
   }
 }
 

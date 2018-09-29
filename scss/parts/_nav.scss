@@ -163,24 +163,29 @@ $nav--1200-height: calc(100vh - 77px - 69px);
 }
 
 .nav__logo {
-	display: none;
+	display  : block;
+	position : fixed;
+	top      : 5px;
+	left     : 50%;
+	transform: translate(-50%,0);
+	width    : 65px;
+	height   : auto;
 
 	@media all and (min-width: 1200px) {
-		position: fixed;
-		top     : 130px;
-		left    : $size--1200 - 50px;
-		display : block;
-		width   : 300px;
-		height  : auto;
+		top    : 130px;
+		left   : $size--1200 + 100px;
+		display: block;
+		width  : 200px;
+		height : auto;
 
 		@media all and (max-height: 490px) {
 			display: none;
 		}
 
 		@media all and (max-height: 660px) {
-			width: 200px;
+			width: 100px;
 			top  : 100px;
-			left : $size--1200 +10px;
+			left : $size--1200 +90px;
 			//display: none;
 		}
 	}
