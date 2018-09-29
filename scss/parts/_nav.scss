@@ -163,13 +163,19 @@ $nav--1200-height: calc(100vh - 77px - 69px);
 }
 
 .nav__logo {
-	display  : block;
-	position : fixed;
-	top      : 5px;
-	left     : 50%;
-	transform: translate(-50%,0);
-	width    : 65px;
-	height   : auto;
+	display : block;
+	position: fixed;
+	top     : 3px;
+	right   : 15px;
+	width   : 70px;
+	height  : auto;
+
+	@media all and (min-width: 768px) {
+		right    : auto;
+		left     : 50%;
+		transform: translate(-50%,0);
+
+	}
 
 	@media all and (min-width: 1200px) {
 		top    : 130px;

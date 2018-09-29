@@ -182,11 +182,9 @@ table {
 .nav__logo {
   display: block;
   position: fixed;
-  top: 5px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  width: 65px;
+  top: 3px;
+  right: 15px;
+  width: 70px;
   height: auto;
 }
 
@@ -583,6 +581,13 @@ table {
 
   .nav__AllLinks--hidden {
     display: none;
+  }
+
+  .nav__logo {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 
   .footer__img {
