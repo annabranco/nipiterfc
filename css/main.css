@@ -438,7 +438,7 @@ table {
 }
 
 .footbal--field-position {
-  position: relative;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,7 +448,7 @@ table {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #048e3c;
+  background: #a11b1b;
   border: 1px solid;
   border-radius: 20px;
   height: 28px;
@@ -457,31 +457,80 @@ table {
   color: #ffffff;
 }
 
-.position--keeper {
-  position: absolute;
+.position--GK {
   bottom: -10px;
-  left: 44px;
+  left: 43px;
+  background: #048e3c;
 }
 
-.position--fullback {
-  position: absolute;
+.position--RWB {
   bottom: 20px;
-  left: 60px;
-  background: #a11b1b;
+  right: 5px;
 }
 
-.position--striker {
-  position: absolute;
-  top: 10px;
-  left: 44px;
-  background: #a11b1b;
+.position--FB {
+  bottom: 20px;
+  left: 43px;
 }
 
-.position--midfielder {
-  position: absolute;
-  bottom: 70px;
+.position--LWB {
+  bottom: 20px;
+  left: 5px;
+}
+
+.position--RM {
+  bottom: 63px;
+  right: 5px;
+}
+
+.position--DM {
+  bottom: 38px;
+  left: 43px;
+}
+
+.position--MF {
+  bottom: 63px;
+  left: 43px;
+}
+
+.position--AM {
+  top: 38px;
+  left: 43px;
+}
+
+.position--LM {
+  bottom: 63px;
+  left: 5px;
+}
+
+.position--RW {
+  top: 30px;
+  right: 10px;
+}
+
+.position--FW {
+  top: 18px;
+  left: 43px;
+}
+
+.position--ST {
+  top: 5px;
+  left: 43px;
+}
+
+.position--LW {
+  top: 30px;
   left: 10px;
-  background: #a11b1b;
+}
+
+.leftFocus {
+  right: auto;
+  left: 28px;
+}
+
+.rightFocus {
+  left: auto;
+  right: 28px;
 }
 
 .uppercase {
