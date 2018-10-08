@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import NiPiter from '../components/NiPiter';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="title">Ni Piter FC</h1>
+        <NiPiter />
       </div>
     );
   }
