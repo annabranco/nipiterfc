@@ -1,0 +1,21 @@
+.home_container {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+.home__logo {
+  margin: 30px auto;
+  width: 60%;
+
+  @media all and (min-width: 500px) {
+    width: 50%;
+  }
+  @media all and (min-width: 700px) {
+    width: 40%;
+  }
+}
+
+.home__title {
+  @include font-h2();
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header/Header';
+import Nav from './Nav/Nav';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
 
@@ -9,6 +10,7 @@ const NiPiter = ({ props }) => {
     <React.Fragment>
 
       <Header />
+      <Nav />
       <Main />
       <Footer />
 
