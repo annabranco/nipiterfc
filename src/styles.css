@@ -610,6 +610,24 @@ time, mark, audio, video {
     .footer__txt {
       padding-right: 140px; } }
 
+.footer__version {
+  font-family: "Barlow", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #ffffff;
+  z-index: 2;
+  position: absolute;
+  bottom: 6px;
+  right: 31px;
+  color: #000000; }
+  @media all and (min-width: 768px) {
+    .footer__version {
+      right: 90px; } }
+  @media all and (min-width: 1200px) {
+    .footer__version {
+      right: 140px; } }
+
 .footer__whitebar {
   position: absolute;
   bottom: 7px;

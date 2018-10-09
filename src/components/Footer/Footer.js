@@ -11,6 +11,7 @@ const Footer = ({ props }) => {
       <div class="footer__block--green">
         <p class="footer__txt">NiPiter FC ©2018</p>
         <p class="footer__txt">Madrid</p>
+        <p class="footer__version">v0.1.0</p>
       </div>
       <div class="footer__whitebar background--strips"></div>
     </footer>

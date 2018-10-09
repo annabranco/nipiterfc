@@ -82,6 +82,22 @@ $footer__block--green-size: calc(90vw);
   }
 }
 
+.footer__version {
+  @include font-footer();
+  z-index      : 2;
+  position        : absolute;
+  bottom          : 6px;
+  right: $size--320;
+  color: $black;
+
+  @media all and (min-width: 768px) {
+    right: $size--768;
+  }
+  @media all and (min-width: 1200px) {
+    right: $size--1200;
+  }
+}
+
 .footer__whitebar {
   position        : absolute;
   bottom          : 7px;
