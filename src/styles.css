@@ -20,29 +20,10 @@ time, mark, audio, video {
   vertical-align: baseline;
   box-sizing: border-box; }
 
-.main {
-  padding-top: 77px;
-  height: 150vh; }
-
-.background--strips {
-  background-image: url("https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/background_320px.jpg");
-  background-size: 100%;
-  background-repeat: repeat-y; }
-  @media all and (min-width: 372px) {
-    .background--strips {
-      background-image: url("https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/background_1200px.jpg"); } }
-  @media all and (min-width: 768px) {
-    .background--strips {
-      display: flex;
-      justify-content: center; } }
-
-@media all and (min-width: 1200px) {
-  .main__principal {
-    margin-left: 397px; } }
-
 .header {
   z-index: 1;
   position: fixed;
+  top: 0;
   width: 100%; }
 
 .header__block--outer {
@@ -66,6 +47,11 @@ time, mark, audio, video {
     .header__block--inner {
       padding-left: 140px;
       margin-right: 109px; } }
+
+.header__link {
+  text-decoration: none; }
+  .header__link:hover {
+    text-decoration: none; }
 
 .header__title {
   font-family: "Barlow", sans-serif;
@@ -262,27 +248,62 @@ time, mark, audio, video {
       top: 100px;
       left: 230px; } }
 
+.main {
+  height: 100%; }
+
+.background--strips {
+  background-image: url("https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/background_320px.jpg");
+  background-size: 100%;
+  background-repeat: repeat-y; }
+  @media all and (min-width: 372px) {
+    .background--strips {
+      background-image: url("https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/background_1200px.jpg"); } }
+  @media all and (min-width: 768px) {
+    .background--strips {
+      display: flex;
+      justify-content: center; } }
+
+@media all and (min-width: 768px) {
+  .main__principal {
+    width: 80%;
+    margin-left: 40px; } }
+
+@media all and (min-width: 1200px) {
+  .main__principal {
+    width: 60%;
+    margin-left: 290px; } }
+
 .home_container {
-  margin-top: 80px;
   text-align: center;
-  width: 100%; }
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(145, 236, 168, 0.4)), url("https://www.scenolia.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/2/2/22055.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
 
 .home__logo {
-  margin: 30px auto;
-  width: 60%; }
+  z-index: 3;
+  margin: 160px auto 30px;
+  width: 50%; }
   @media all and (min-width: 500px) {
     .home__logo {
       width: 50%; } }
   @media all and (min-width: 700px) {
     .home__logo {
-      width: 40%; } }
+      width: 30%; } }
 
 .home__title {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 0.78;
-  color: #158C3F; }
+  color: #158C3F;
+  color: #000000;
+  text-shadow: 0 0 2px #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100vw; }
 
 .blog__outer {
   position: relative;
@@ -293,61 +314,50 @@ time, mark, audio, video {
   overflow-y: scroll; }
   @media all and (min-width: 601px) {
     .blog__outer {
-      width: calc(100vw - (90px *2));
-      margin-right: 65px; } }
-  @media all and (min-width: 891px) {
-    .blog__outer {
-      margin-right: 0; } }
+      width: calc(100vw - (120px *2)); } }
   @media all and (min-width: 1081px) {
     .blog__outer {
       margin-top: 0; } }
   @media all and (min-width: 1200px) {
     .blog__outer {
-      width: calc(100vw - 530px);
-      margin-right: 40px; } }
+      width: calc(100vw - 530px); } }
 
 .blog__inner {
   position: absolute;
-  top: -390px;
+  top: -320px;
   left: -4px;
-  height: calc(100% + 400px);
+  height: calc(100% + 500px);
   width: 100%; }
   @media all and (min-width: 780px) {
     .blog__inner {
-      top: -540px; } }
-  @media all and (min-width: 801px) {
-    .blog__inner {
-      top: -520px; } }
-  @media all and (min-width: 881px) {
-    .blog__inner {
-      top: -550px; } }
+      top: -470px; } }
   @media all and (min-width: 981px) {
     .blog__inner {
       top: -550px; } }
   @media all and (min-width: 1081px) {
     .blog__inner {
-      top: -620px; } }
+      top: -530px; } }
   @media all and (min-width: 1200px) {
     .blog__inner {
-      top: -520px; } }
+      top: -480px; } }
   @media all and (min-width: 1330px) {
     .blog__inner {
-      top: -620px; } }
+      top: -560px; } }
 
 /* global $width--1200 */
 .players {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 40px 10vw 100px; }
+  margin: 100px 10vw 100px; }
   @media all and (min-width: 768px) {
     .players {
       width: 100%;
-      max-width: 700px;
-      height: auto; } }
+      max-width: 1199px;
+      height: auto;
+      margin-left: 0; } }
   @media all and (min-width: 1200px) {
     .players {
-      margin-left: 397px;
       padding-left: 35px;
       max-width: 1200px; } }
 

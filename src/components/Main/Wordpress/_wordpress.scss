@@ -2,12 +2,12 @@ $blog__outer-height: calc(100vh - 32px);
 $blog__outer-height1081: calc(100vh + 50px);
 
 $blog__outer-width320: calc(100vw - (#{$size--320} * 2));
-$blog__outer-width768: calc(100vw - (#{$size--768} *2));
+$blog__outer-width768: calc(100vw - (#{$size--768 + 30px} *2));
 // $blog__outer-width1200: calc(100vw - (#{$size--1200} *2));
 
 $blog__outer-width1200: calc(100vw - 530px);
 
-$blog__embed-height: calc(100% + 400px);
+$blog__embed-height: calc(100% + 500px);
 
 .blog__outer {
   position                  : relative;
@@ -19,11 +19,9 @@ $blog__embed-height: calc(100% + 400px);
 
   @media all and (min-width: 601px) {
     width       : $blog__outer-width768;
-    margin-right: 65px;
   }
 
   @media all and (min-width: 891px) {
-    margin-right: 0;
   }
 
   @media all and (min-width: 1081px) {
@@ -32,29 +30,18 @@ $blog__embed-height: calc(100% + 400px);
 
   @media all and (min-width: 1200px) {
     width       : $blog__outer-width1200;
-    margin-right: 40px;
-
   }
-
 }
 
 .blog__inner {
   position: absolute;
-  top     : -390px;
+  top     : -320px;
   left    : -4px;
   height  : $blog__embed-height;
   width   : 100%;
 
   @media all and (min-width: 780px) {
-    top: -540px;
-  }
-
-  @media all and (min-width: 801px) {
-    top: -520px;
-  }
-
-  @media all and (min-width: 881px) {
-    top: -550px;
+    top: -470px;
   }
 
   @media all and (min-width: 981px) {
@@ -62,15 +49,14 @@ $blog__embed-height: calc(100% + 400px);
   }
 
   @media all and (min-width: 1081px) {
-    top: -620px;
+    top: -530px;
   }
 
   @media all and (min-width: 1200px) {
-    top: -520px;
+    top: -480px;
   }
 
   @media all and (min-width: 1330px) {
-    top: -620px;
+    top: -560px;
   }
-
 }

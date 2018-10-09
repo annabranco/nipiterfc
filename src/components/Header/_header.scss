@@ -1,6 +1,7 @@
 .header {
   z-index : 1;
   position: fixed;
+  top: 0;
   width   : 100%;
 }
 
@@ -33,6 +34,13 @@
     padding-left: $size--1200;
     margin-right: $size--1200 - 31px;
 
+  }
+}
+
+.header__link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
   }
 }
 

@@ -13,7 +13,9 @@ const Nav = ({ props }) => {
         <Link to='/contact' className="nav__link">Contacto</Link>
       </div>
 
-      <img src={Escudo} alt="Escudo de Ni Piter FC" class="nav__logo" />
+      <Link to='/' className="header__link">
+        <img src={Escudo} alt="Escudo de Ni Piter FC" class="nav__logo" />
+      </Link>
     </nav>
 
   );

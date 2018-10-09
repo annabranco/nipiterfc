@@ -4,16 +4,16 @@
 	display       : flex;
 	align-items   : center;
 	flex-direction: column;
-	margin        : 40px 10vw 100px;
+	margin        : 100px 10vw 100px;
 
 	@media all and (min-width: 768px) {
 		width    : 100%;
-		max-width: 700px;
-		height   : auto;
+		max-width: 1199px;
+    height   : auto;
+    margin-left: 0;
 	}
 
 	@media all and (min-width: 1200px) {
-		margin-left : 397px;
 		padding-left: 35px;
 		max-width   : 1200px;
 	}
