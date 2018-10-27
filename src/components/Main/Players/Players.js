@@ -1,9 +1,5 @@
 import React from 'react';
-import Diana from '../../../images/players/1-diana.jpg';
-import Lara from '../../../images/players/4-lara.jpg';
-import Merida from '../../../images/players/9-merida.jpg';
-import Lisa from '../../../images/players/13-lisa.jpg';
-import LGBT from '../../../images/players/flags/flag-rainbow.png';
+import { Squad } from '../../../database/squad';
 
 const Players = ({ props }) => {
 
@@ -11,21 +7,41 @@ const Players = ({ props }) => {
 
     <section class="players">
 
-    {/* Para alterar orden
-        1. En player__outer, colocar player--order-XX con la orden deseada;
-        Ordenes pares:
+      { Squad.map( player => (
 
-        2. Em player__box--birthplace añadir player__info--right;
-
-        3. Em player__city añadir: player--align-right;
-
-        4. Em social-networks, añadir social-networks--right;
-
-        Ordenes impares:
-
-        Borrar las clases añadidas en las pares. */}
-
-      <div class="player__outer player--order-01 row no-gutters">
+        <div class="player__outer player--order-01 row no-gutters">
+          <div class="player__box--photo col-6 col-sm-4 col-md-3">
+            <img class="player__photo" src={ player.photo } alt={ player.name } />
+          </div>
+          <div class="player__box--details col-6 col-sm-8 col-md-6">
+            <h4 class="player__name">{ player.name }</h4>
+            <p class="player__info">{ player.position }</p>
+            <p class="player__info">Dorsal #{ player.shirt }</p>
+            <p class="player__box--birthplace player__info">
+              <span class="player__city">{ player.city }</span>
+              <img
+                  class="player__flag"
+                  src={ `https://www.countryflags.io/${ player.country }/shiny/32.png` }
+                  alt="Bandera del país"
+              />
+            </p>
+            <p class="player__info">Desde { player.since }</p>
+            <div class="social-networks">
+              <i class="fab fa-twitter twitter"></i>
+              <i class="fab fa-facebook-square facebook"></i>
+              <i class="fab fa-instagram instagram"></i>
+            </div>
+          </div>
+          <div class="outer__footbal--field col-md-3">
+            <div class="footbal--field">
+              <span class={`footbal--field-position position--${ player.cod }`}>
+                { player.shirt }
+              </span>
+            </div>
+          </div>
+        </div>
+      ))}
+      {/* <div class="player__outer player--order-01 row no-gutters">
         <div class="player__box--photo col-6 col-sm-4 col-md-3">
           <img class="player__photo" src={Diana} alt="Diana" />
         </div>
@@ -35,7 +51,7 @@ const Players = ({ props }) => {
           <p class="player__info">Dorsal #1</p>
           <p class="player__box--birthplace player__info">
             <span class="player__city">Themyscira</span>
-            <img class="player__flag" src={LGBT} alt="Bandera LGBT"/> 
+            <img class="player__flag" src={LGBT} alt="Bandera LGBT"/>
           </p>
           <p class="player__info">Desde 2015</p>
           <div class="social-networks">
@@ -133,7 +149,7 @@ const Players = ({ props }) => {
             <span class="footbal--field-position position--ST">8</span>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
 
   );
