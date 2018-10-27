@@ -41,12 +41,12 @@ time, mark, audio, video {
   padding-left: 31px; }
   @media all and (min-width: 768px) {
     .header__block--inner {
-      padding-left: 90px;
-      margin-right: 59px; } }
+      margin-right: 59px;
+      padding-left: 90px; } }
   @media all and (min-width: 1200px) {
     .header__block--inner {
-      padding-left: 140px;
-      margin-right: 109px; } }
+      margin-right: 109px;
+      padding-left: 140px; } }
 
 .header__link {
   text-decoration: none; }
@@ -265,21 +265,21 @@ time, mark, audio, video {
 
 @media all and (min-width: 768px) {
   .main__principal {
-    width: 80%;
-    margin-left: 40px; } }
+    margin-left: 40px;
+    width: 80%; } }
 
 @media all and (min-width: 1200px) {
   .main__principal {
-    width: 60%;
-    margin-left: 290px; } }
+    margin-left: 290px;
+    width: 60%; } }
 
 .home_container {
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(145, 236, 168, 0.4)), url("https://www.scenolia.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/2/2/22055.jpg");
   background-size: 100% 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  text-align: center; }
 
 .home__logo {
   z-index: 3;
@@ -298,20 +298,20 @@ time, mark, audio, video {
   font-weight: 600;
   line-height: 0.78;
   color: #158C3F;
-  color: #000000;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100vw;
   text-shadow: 0 0 2px #ffffff;
   font-size: 1.5rem;
   line-height: 1.5;
-  background: rgba(255, 255, 255, 0.4);
-  width: 100vw; }
+  color: #000000; }
 
 .blog__outer {
   position: relative;
   margin: 25px auto 0;
   height: calc(100vh - 32px);
   width: calc(100vw - (31px * 2));
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
   @media all and (min-width: 601px) {
     .blog__outer {
       width: calc(100vw - (120px *2)); } }
@@ -347,19 +347,19 @@ time, mark, audio, video {
 /* global $width--1200 */
 .players {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   margin: 100px 10vw 100px; }
   @media all and (min-width: 768px) {
     .players {
-      width: 100%;
-      max-width: 1199px;
+      margin-left: 0;
       height: auto;
-      margin-left: 0; } }
+      max-width: 1199px;
+      width: 100%; } }
   @media all and (min-width: 1200px) {
     .players {
-      padding-left: 35px;
-      max-width: 1200px; } }
+      max-width: 1200px;
+      padding-left: 35px; } }
 
 .player__outer {
   display: flex;
@@ -402,8 +402,8 @@ time, mark, audio, video {
   font-weight: bold;
   line-height: 1.67;
   color: #a11b1b;
-  margin-left: 16px;
-  margin-right: 16px; }
+  margin-right: 16px;
+  margin-left: 16px; }
 
 .player__info {
   font-family: "Averia Serif Libre", serif;
@@ -411,9 +411,9 @@ time, mark, audio, video {
   font-weight: bold;
   line-height: 2.14;
   color: #4c4c4c;
-  margin-left: 16px;
   margin-right: 16px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-left: 16px; }
 
 .player__box--birthplace {
   display: flex;
@@ -422,8 +422,8 @@ time, mark, audio, video {
 
 .player__flag {
   margin: 0 10px;
-  width: 24px;
-  height: auto; }
+  height: auto;
+  width: 24px; }
 
 .player__info--right {
   justify-content: flex-end; }
@@ -472,11 +472,11 @@ time, mark, audio, video {
 .footbal--field-position {
   position: absolute;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background: #a11b1b;
+  align-items: center;
   border: 1px solid;
   border-radius: 20px;
+  background: #a11b1b;
   height: 28px;
   width: 28px;
   font-size: 17px;
@@ -536,8 +536,8 @@ time, mark, audio, video {
   left: 10px; }
 
 .leftFocus {
-  right: auto;
-  left: 28px; }
+  left: 28px;
+  right: auto; }
 
 .rightFocus {
   left: auto;
@@ -559,8 +559,8 @@ time, mark, audio, video {
 .footer__img {
   z-index: 1;
   position: absolute;
-  left: 31px;
   bottom: 7px;
+  left: 31px;
   height: 61px; }
   @media all and (min-width: 768px) {
     .footer__img {

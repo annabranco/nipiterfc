@@ -1,107 +1,106 @@
 $footer__height-total: 69px;
 
 .footer {
-  position       : fixed;
-  bottom         : 0;
-  display        : flex;
-  justify-content: space-between;
-  align-items    : center;
-  border-top     : 1px solid $white;
-  height         : $footer__height-total;
-  width          : 100%;
+  position        : fixed;
+  bottom          : 0;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  border-top      : 1px solid $white;
+  height          : $footer__height-total;
+  width           : 100%;
 
   @media all and (max-height:400px) {
-    bottom: -20px;
-
+    bottom : -20px;
   }
 }
 
 .footer__img {
-  z-index : 1;
-  position: absolute;
-  left    : $size--320;
-  bottom  : 7px;
-  height  : 61px;
+  z-index  : 1;
+  position : absolute;
+  bottom   : 7px;
+  left     : $size--320;
+  height   : 61px;
 
   @media all and (min-width: 768px) {
-    left: $size--768;
+    left : $size--768;
   }
 
   @media all and (min-width: 1200px) {
-    left: $size--1200;
+    left : $size--1200;
   }
 
 }
 
 .footer__block--red {
-  background-color: $nipiter_red;
-  height          : 100%;
-  width           : $size--320 + 15px;
+  background-color : $nipiter_red;
+  height           : 100%;
+  width            : $size--320 + 15px;
 
   @media all and (min-width: 768px) {
-    width: $size--768 + 15px;
+    width : $size--768 + 15px;
   }
 
   @media all and (min-width: 1200px) {
-    width: $size--1200 + 15px;
+    width : $size--1200 + 15px;
   }
 }
 
 /* (screen - size_of_red - blank_strip); */
 
-$footer__block--green-size320: calc(100vw - 15px - 2px - #{$size--320});
-$footer__block--green-size768: calc(100vw - 15px - 2px - #{$size--768});
-$footer__block--green-size1200: calc(100vw - 15px - 2px - #{$size--1200});
-$footer__block--green-size: calc(90vw);
+$footer__block--green-size320  : calc(100vw - 15px - 2px - #{$size--320});
+$footer__block--green-size768  : calc(100vw - 15px - 2px - #{$size--768});
+$footer__block--green-size1200 : calc(100vw - 15px - 2px - #{$size--1200});
+$footer__block--green-size     : calc(90vw);
 
 .footer__block--green {
-  background-color: $nipiter-green;
-  height          : 100%;
-  width           : $footer__block--green-size320;
-  padding         : 10px 0;
+  background-color : $nipiter-green;
+  height           : 100%;
+  width            : $footer__block--green-size320;
+  padding          : 10px 0;
   @media all and (min-width: 768px) {
-    width: $footer__block--green-size768;
+    width : $footer__block--green-size768;
   }
   @media all and (min-width: 1200px) {
-    width: $footer__block--green-size1200;
+    width : $footer__block--green-size1200;
   }
 }
 
 .footer__txt {
   @include font-footer();
-  z-index      : 1;
-  margin-bottom: 0;
+  z-index       : 1;
+  margin-bottom : 0;
 
-  padding-right: $size--320;
-  text-align   : right;
+  padding-right : $size--320;
+  text-align    : right;
   @media all and (min-width: 768px) {
-    padding-right: $size--768;
+    padding-right : $size--768;
   }
   @media all and (min-width: 1200px) {
-    padding-right: $size--1200;
+    padding-right : $size--1200;
   }
 }
 
 .footer__version {
   @include font-footer();
-  z-index      : 2;
-  position        : absolute;
-  bottom          : 6px;
-  right: $size--320;
-  color: $black;
+  z-index  : 2;
+  position : absolute;
+  bottom   : 6px;
+  right    : $size--320;
+  color    : $black;
 
   @media all and (min-width: 768px) {
-    right: $size--768;
+    right : $size--768;
   }
   @media all and (min-width: 1200px) {
-    right: $size--1200;
+    right : $size--1200;
   }
 }
 
 .footer__whitebar {
-  position        : absolute;
-  bottom          : 7px;
-  background-color: $white;
-  height          : 13px;
-  width           : 100%;
+  position         : absolute;
+  bottom           : 7px;
+  background-color : $white;
+  height           : 13px;
+  width            : 100%;
 }

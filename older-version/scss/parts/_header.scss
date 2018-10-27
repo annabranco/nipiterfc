@@ -1,50 +1,47 @@
 .header {
-  z-index : 1;
-  position: fixed;
-  width   : 100%;
+  z-index  : 1;
+  position : fixed;
+  width    : 100%;
 }
 
 .header__block--outer {
-  background-color: $nipiter-green;
+  background-color : $nipiter-green;
   // width: 320px;
 
   @media all and (max-height:400px) {
-    display: none;
+    display : none;
   }
-
 }
 
 .header__block--inner {
-  display         : flex;
-  justify-content : space-between;
-  align-items     : center;
-  background-color: $nipiter_red;
-  height          : 53px;
+  display          : flex;
+  justify-content  : space-between;
+  align-items      : center;
+  background-color : $nipiter_red;
+  height           : 53px;
   // width: 320px;
-  padding-left    : $size--320;
+  padding-left : $size--320;
 
   @media all and (min-width: 768px) {
-    padding-left: $size--768;
-    margin-right: $size--768 - 31px;
-
+    margin-right : $size--768 - 31px;
+    padding-left : $size--768;
   }
 
   @media all and (min-width: 1200px) {
-    padding-left: $size--1200;
-    margin-right: $size--1200 - 31px;
-
+    margin-right : $size--1200 - 31px;
+    padding-left : $size--1200;
   }
 }
 
 .header__title {
   @include font-h1();
-  padding-bottom: 5px;
-  color         : $transparent-white;
+  padding-bottom : 5px;
+  color          : $transparent-white;
 }
 
 .header__img {
-  display: inline;
-  height : 53px;
+  display : inline;
+  height  : 53px;
   //
   // @media all and (min-width: 768px) {
   // margin-right: $size--768 - 31px;
@@ -57,17 +54,16 @@
 
 .header__titlebar {
   @include font-h2();
-  background-color: $light-green;
-  height          : 24px;
+  background-color : $light-green;
+  height           : 24px;
   // width: 320px;
-  padding         : 5px $size--320;
+  padding : 5px $size--320;
 
   @media all and (min-width: 768px) {
-    padding: 5px $size--768;
+    padding : 5px $size--768;
   }
 
   @media all and (min-width: 1200px) {
-    padding: 5px $size--1200;
+    padding : 5px $size--1200;
   }
-
 }
