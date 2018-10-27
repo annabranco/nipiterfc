@@ -15,7 +15,10 @@
       "es6"     : true,
       "node"    : true
   },
-  "extends" : "eslint:recommended",
+  "extends" : [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "rules"   : {
     "for-direction"               : 2,
     "no-console"                  : 1,
@@ -30,7 +33,6 @@
     "no-func-assign"              : "error",
     "no-template-curly-in-string" : "warn",
     "block-scoped-var"            : "error",
-    "class-methods-use-this"      : "warn",
     "complexity"                  : ["error", 4],
     "curly"                       : ["error", "multi"],
     "default-case"                : ["error", { "commentPattern": "^skip\\sdefault" }],
