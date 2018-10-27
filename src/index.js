@@ -4,9 +4,9 @@ import App from './core/App';
 import './styles.css';
 import { HashRouter } from 'react-router-dom';
 
-
 ReactDOM.render(
   <HashRouter>
     <App />
   </HashRouter>
-  , document.getElementById('root'));
+  , document.getElementById( 'root' )
+);
