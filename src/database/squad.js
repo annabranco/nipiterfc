@@ -1,9 +1,9 @@
-import Diana from '../images/players/1-diana.jpg';
-import Lara from '../images/players/4-lara.jpg';
-import Merida from '../images/players/9-merida.jpg';
-import Lisa from '../images/players/13-lisa.jpg';
-import Lisbeth from '../images/players/24-lisbeth.jpg';
-import Alice from '../images/players/37-alice.jpg';
+import PhotoDiana from '../images/players/1-diana.jpg';
+import PhotoLara from '../images/players/4-lara.jpg';
+import PhotoMerida from '../images/players/9-merida.jpg';
+import PhotoLisa from '../images/players/13-lisa.jpg';
+import PhotoLisbeth from '../images/players/24-lisbeth.jpg';
+import PhotoAlice from '../images/players/37-alice.jpg';
 
 export const Squad = [
   {
@@ -14,7 +14,7 @@ export const Squad = [
     city      : 'Themyscira',
     country   : 'eu',
     since     : 2015,
-    photo     : Diana,
+    photo     : PhotoDiana,
     twitter   : '',
     facebook  : '',
     instagram : '',
@@ -27,7 +27,7 @@ export const Squad = [
     city      : 'Wimbledom',
     country   : 'gb',
     since     : 2018,
-    photo     : Lara,
+    photo     : PhotoLara,
     twitter   : '',
     facebook  : '',
     instagram : '',
@@ -40,7 +40,7 @@ export const Squad = [
     city      : 'Stocolm',
     country   : 'se',
     since     : 2014,
-    photo     : Lisbeth,
+    photo     : PhotoLisbeth,
     twitter   : '',
     facebook  : '',
     instagram : '',
@@ -53,7 +53,7 @@ export const Squad = [
     city      : 'DunBroch',
     country   : 'gb',
     since     : 2016,
-    photo     : Merida,
+    photo     : PhotoMerida,
     twitter   : '',
     facebook  : '',
     instagram : '',
@@ -66,7 +66,7 @@ export const Squad = [
     city      : 'Springfield',
     country   : 'us',
     since     : 2018,
-    photo     : Lisa,
+    photo     : PhotoLisa,
     twitter   : '',
     facebook  : '',
     instagram : '',
@@ -79,11 +79,9 @@ export const Squad = [
     city      : 'Raccooncity',
     country   : 'us',
     since     : 2017,
-    photo     : Alice,
+    photo     : PhotoAlice,
     twitter   : '',
     facebook  : '',
     instagram : '',
-  }
+  },
 ];
-
-
