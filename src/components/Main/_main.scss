@@ -1,32 +1,31 @@
 .main {
-  height: 100%;
+  height : 100%;
 }
 
 .background--strips {
-  background-image: url('https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/background_320px.jpg');
-  background-size: 100%;
-  background-repeat: repeat-y;
+  background-image  : url('https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/background_320px.jpg');
+  background-size   : 100%;
+  background-repeat : repeat-y;
 
   @media all and (min-width: 372px) {
-    background-image: url('https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/background_1200px.jpg');
+    background-image : url('https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/background_1200px.jpg');
   }
 
   @media all and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
+    display         : flex;
+    justify-content : center;
   }
-
 }
 
 .main__principal {
 
   @media all and (min-width: 768px) {
-    width: 80%;
-    margin-left: 40px;
+    margin-left : 40px;
+    width       : 80%;
 
   }
   @media all and (min-width: 1200px) {
-    width: 60%;
-    margin-left: 290px;
+    margin-left : 290px;
+    width       : 60%;
   }
 }

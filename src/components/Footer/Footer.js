@@ -1,22 +1,19 @@
 import React from 'react';
 import NiPiterBarBottom from '../../images/layout/nipiter_bar_bottom.jpg';
 
-const Footer = ({ props }) => {
+const Footer = () => (
 
-  return (
+  <footer className="footer">
+    <img className="footer__img" src={NiPiterBarBottom} alt="" />
+    <div className="footer__block--red"></div>
+    <div className="footer__block--green">
+      <p className="footer__txt">NiPiter FC ©2018</p>
+      <p className="footer__txt">Madrid</p>
+      <p className="footer__version">v0.1.0</p>
+    </div>
+    <div className="footer__whitebar background--strips"></div>
+  </footer>
 
-    <footer class="footer">
-      <img class="footer__img" src={NiPiterBarBottom} alt="" />
-      <div class="footer__block--red"></div>
-      <div class="footer__block--green">
-        <p class="footer__txt">NiPiter FC ©2018</p>
-        <p class="footer__txt">Madrid</p>
-        <p class="footer__version">v0.1.0</p>
-      </div>
-      <div class="footer__whitebar background--strips"></div>
-    </footer>
-
-  );
-}
+);
 
 export default Footer;

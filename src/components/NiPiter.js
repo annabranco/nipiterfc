@@ -1,21 +1,19 @@
 import React from 'react';
 import Header from './Header/Header';
-import Nav from './Nav/Nav';
+import Navigation from './Nav/Nav';
 import Main from './Main/Main';
 import Footer from './Footer/Footer';
 
-const NiPiter = ({ props }) => {
+const NiPiter = () => (
 
-  return (
-    <React.Fragment>
+  <React.Fragment>
 
-      <Header />
-      <Nav />
-      <Main />
-      <Footer />
+    <Header />
+    <Navigation />
+    <Main />
+    <Footer />
 
-    </React.Fragment>
-  );
-}
+  </React.Fragment>
+);
 
 export default NiPiter;
