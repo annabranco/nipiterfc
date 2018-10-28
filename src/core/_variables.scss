@@ -21,6 +21,17 @@ $title    : 'Barlow',             sans-serif;
 $subtitle : 'Averia Sans Libre',  sans-serif;
 $main     : 'Averia Serif Libre', serif;
 
+// horizontal padding/margin for formats
+$size--320   : 31px;
+$size--768   : 90px;
+$size--1200  : 140px;
+$width--1200 : calc(100% - 177px - 397px);
+
+// sizes of main components
+$header__height : 77px;
+$footer__height : 69px;
+$main__height   : calc( 100vh - #{$header__height} - #{$footer__height} );
+
 // styles
 @mixin font-h1 {
   font-family : $title;

@@ -4,7 +4,7 @@ import HomeLogo from '../../../images/escudo_intro.gif';
 const Home = () => (
 
   <div className="home_container">
-    <img src={HomeLogo} alt="Escudo de Ni Piter FC" className="home__logo"/>
+    <img src={ HomeLogo } alt="Escudo de Ni Piter FC" className="home__logo"/>
     <h1 className="home__title">Bienvenid@ a la página oficial de Ni Piter FC</h1>
   </div>
 );

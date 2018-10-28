@@ -1,5 +1,6 @@
 .main {
-  height : 100%;
+  margin-top : $header__height;
+  height     : $main__height;
 }
 
 .background--strips {
@@ -18,7 +19,8 @@
 }
 
 .main__principal {
-
+  height : 100%;
+  
   @media all and (min-width: 768px) {
     margin-left : 40px;
     width       : 80%;

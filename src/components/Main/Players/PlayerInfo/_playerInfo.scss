@@ -1,0 +1,160 @@
+.player__outer {
+  display       : flex;
+  border-bottom : 1px solid $gray;
+  width         : 100%;
+  padding       : 30px 0;
+}
+
+.player__box--photo {
+  z-index  : 0;
+  position : relative;
+  width    : 100%;
+}
+
+.player__photo {
+  z-index   : 0;
+  position  : relative;
+  border    : 5px solid $gray;
+  width     : 100%;
+  max-width : 500px;
+}
+
+$photo-innerWidth : calc(100% - 10px);
+
+.player__box--details {
+
+  &.showDetails {
+  z-index        : 1;
+  position       : absolute;
+  top            : 0;
+  display        : flex;
+  flex-direction : column;
+  background     : rgba($black,0.7);
+  width          : $photo-innerWidth;
+  height         : 37%;
+  min-height     : 230px;
+  box-sizing     : border-box;
+  margin         : 5px;
+  padding        : 5px;
+  }
+}
+
+$nameBar-width : calc(100% - 10px);
+
+.player__name {
+  z-index  : 2;
+  position : absolute;
+  top      : 5px;
+  left     : 5px;
+  @include font-h4();
+  height      : 60px;
+  color       : $white;
+  font-size   : 3rem;
+  background  : rgba($black,0.5);
+  width       : $nameBar-width;
+  padding     : 0 20px 10px;
+  line-height : 1.2;
+
+  &.showDetails {
+    position   : static;
+    background : none;
+    margin     : -5px -5px 0;
+    color      : $nipiter-red;
+  }
+}
+.moreInfo {
+  z-index       : 2;
+  position      : absolute;
+  top           : 20px;
+  right         : 25px;
+  background    : $white;
+  border-radius : 50%;
+  border        : 2px solid $black;
+  font-size     : 1.5rem;
+  color         : $facebook-blue;
+  opacity       : 0.8;
+  cursor        : pointer;
+
+  &:hover {
+    box-shadow : 0 0 10px 1px $white;
+  }
+
+  &.showDetails {
+    top   : 15px;
+    right : 20px;
+    color : $dark-red;
+  }
+}
+
+.player__info {
+  display : none;
+
+  &.showDetails {
+    display : block;
+    @include font-p();
+    margin : 5px 16px;
+    height : 20px;
+    color  : $gray;
+  }
+}
+
+.player__box--birthplace {
+  display : none;
+
+  &.showDetails {
+    display        : flex;
+    align-items    : center;
+    vertical-align : middle;
+    margin-top     : 20px;
+  }
+}
+
+.player__flag {
+	margin : 0 10px;
+	height : auto;
+	width  : 24px;
+}
+
+.social-networks {
+  display : none;
+
+  &.showDetails {
+  	@include font-button();
+  	display         : flex;
+  	justify-content : space-around;
+  	align-items     : flex-end;
+  	margin          : 10px 16px 0;
+  	height          : 25px;
+  	width           : 50%;
+  }
+}
+
+.sw-icon {
+  background    : rgba($white, 0.9);
+  height        : 26px;
+  width         : 26px;
+  border-radius : 5px;
+  text-align    : center;
+  line-height   : 1.1;
+  font-size     : 1.5rem;
+  filter        : saturate(1.5) ;
+}
+
+.facebook {
+  margin : 0 35px;
+	@media all and (min-width: 768px) {
+		margin : 0 60px;
+	}
+}
+
+.twitter {
+	color : $twitter-blue;
+}
+
+.facebook {
+	color : $facebook-blue;
+}
+
+.instagram {
+	color : $dark-red;
+}

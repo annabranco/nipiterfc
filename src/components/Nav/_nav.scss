@@ -16,7 +16,7 @@ $nav--1200-height: calc(100vh - 77px - 69px);
 
 .nav__button {
   @include font-h3();
-  z-index          : 3;
+  z-index          : 4;
   margin           : 5px auto;
   height           : 25px;
   padding          : 0 20px;
@@ -45,7 +45,7 @@ $nav--1200-height: calc(100vh - 77px - 69px);
 }
 
 .nav__AllLinks {
-  z-index         : 2;
+  z-index         : 3;
   position        : absolute;
   top             : 0;
   left            : 50%;
@@ -85,9 +85,19 @@ $nav--1200-height: calc(100vh - 77px - 69px);
   font-size : 2.2rem;
   color     : $white;
 
-@media all and (max-height:500px) {
-  margin : 5px auto;
-}
+  &:active, &:visited {
+    text-decoration : none;
+    color           : $white;
+  }
+
+  &:hover {
+    text-decoration : none;
+    color           : $yellow;
+  }
+
+  @media all and (max-height:500px) {
+    margin : 5px auto;
+  }
 }
 
 .nav__logo-menu {
@@ -96,7 +106,6 @@ $nav--1200-height: calc(100vh - 77px - 69px);
   margin  : 50px 0 0;
   width   : 100px;
   opacity : 0.8;
-
 }
 
 .nav__logo-topBar {

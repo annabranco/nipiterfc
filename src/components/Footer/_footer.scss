@@ -1,5 +1,3 @@
-$footer__height-total: 69px;
-
 .footer {
   position        : fixed;
   bottom          : 0;
@@ -7,7 +5,7 @@ $footer__height-total: 69px;
   justify-content : space-between;
   align-items     : center;
   border-top      : 1px solid $white;
-  height          : $footer__height-total;
+  height          : $footer__height;
   width           : 100%;
 
   @media all and (max-height:400px) {
@@ -29,7 +27,6 @@ $footer__height-total: 69px;
   @media all and (min-width: 1200px) {
     left : $size--1200;
   }
-
 }
 
 .footer__block--red {
