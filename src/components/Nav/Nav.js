@@ -26,9 +26,9 @@ class Navigation extends React.Component {
         </button>
 
         <div className={`nav__AllLinks ${ menuOpen ? 'isOpened' : '' }`} >
-          <Link to="/news" className="nav__link">Noticias</Link>
-          <Link to="/players" className="nav__link">Plantilla</Link>
-          <Link to="/contact" className="nav__link">Contacto</Link>
+          <Link to="/news" className="nav__link" onClick={this.toggleMenu}>Noticias</Link>
+          <Link to="/players" className="nav__link" onClick={this.toggleMenu}>Plantilla</Link>
+          <Link to="/contact" className="nav__link" onClick={this.toggleMenu}>Contacto</Link>
           <img src={ HomeLogo } alt="Escudo de Ni Piter FC" className="nav__logo-menu" />
         </div>
 
