@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import NiPiterBarBottom from '../../images/layout/nipiter_bar_bottom.jpg';
 
-const Footer = () => (
+const Footer = ({ version }) => (
 
   <footer className="footer">
     <img className="footer__img" src={NiPiterBarBottom} alt="" />
@@ -9,7 +10,7 @@ const Footer = () => (
     <div className="footer__block--green">
       <p className="footer__txt">NiPiter FC ©2018</p>
       <p className="footer__txt">Madrid</p>
-      <p className="footer__version">v0.1.0</p>
+      <p className="footer__version">{ version }</p>
     </div>
     <div className="footer__whitebar background--strips"></div>
   </footer>
@@ -17,3 +18,5 @@ const Footer = () => (
 );
 
 export default Footer;
+
+Footer.propTypes = { version: PropTypes.string };
