@@ -1,192 +1,134 @@
 $nav--1200-height: calc(100vh - 77px - 69px);
 
 .nav {
-	z-index         : 1;
-  position        : fixed;
-  top             : 77px;
-	display         : flex;
-	justify-content : space-around;
-  background-color: $gray;
-	width           : 100%;
-
-  @media all and (min-width: 768px) {
-    border: 1px solid $dark-red;
-  }
-
-	@media all and (min-width: 1200px) {
-		position       : fixed;
-		top            : 77px;
-		left           : $size--1200;
-		display        : flex;
-		align-items    : center;
-		justify-content: flex-end;
-		border         : 0;
-		border-right   : 2px dashed $gray;
-		box-shadow     : 0 0 0 0;
-		background     : initial;
-		height         : $nav--1200-height;
-		width          : 396px - $size--1200;
-		padding-bottom : 15vh;
-
-		@media all and (max-height: 360px) {
-			margin-top: 20vh;
-		}
-	}
+	z-index    : 1;
+	position   : fixed;
+	top        : 77px;
+	border-top : 1px solid $dark-red;
+	height     : 0;
+	width      : 100%;
+	box-shadow : 0 3px 8px 1px rgba($dark-gray, 0.4);
 
 	@media all and (max-height:400px) {
-		top: 24px;
+		top : 24px;
 	}
 }
 
-.nav-shadow {
-	box-shadow: -1px 2px 2px 1px rgba(81, 82, 81, 0.3);
+.nav__button {
+  @include font-h3();
+  z-index          : 3;
+  margin           : 5px auto;
+  height           : 25px;
+  padding          : 0 20px;
+  border-radius    : 10px;
+  font-size        : 1rem;
+  background-image : linear-gradient(350deg,rgba($feminist-purple,0.9),rgba($feminist-purple,0.7),rgba($light-green,0.7));
+  border           : 1px solid rgba($black,0.7);
+  color            : $yellow;
+  text-shadow      : 0 0 5px $black;
+  box-shadow       : 3px 3px 10px 1px rgba($black,0.6), inset 2px 2px 3px $white;
+  cursor           : pointer;
+  text-transform   : uppercase;
+
+  &:hover {
+    box-shadow : inset 2px 2px 3px rgba($black,0.4);
+    transform  : translate(0,1px);
+    color      : $yellow;
+  }
+
+  &.isOpened {
+    background-image : linear-gradient(350deg,rgba($dark-red,0.9),rgba($dark-red,0.7),rgba($light-green,0.7));
+    box-shadow       : inset 2px 2px 3px $white;
+    transform        : translate(0,1px);
+    color            : $white;
+  }
+}
+
+.nav__AllLinks {
+  z-index         : 2;
+  position        : absolute;
+  top             : 0;
+  left            : 50%;
+  transform       : translate(-50%, 0);
+  border-radius   : 0 0 50px 50px;
+  height          : 0;
+  width           : 100vw;
+  display         : flex;
+  overflow        : hidden;
+  flex-direction  : column;
+  align-items     : center;
+  justify-content : center;
+  background      : rgba($feminist-purple,0.95);
+  transition      : 0.3s ease;
+
+  @media all and (min-width: 768px) {
+    width : 50vw;
+  }
+
+&.isOpened {
+  height         : 100vh;
+  padding-bottom : 120px;
+  transition     : 0.5s ease;
+
+  @media all and (min-width: 768px) {
+    background : rgba($feminist-purple,0.95);
+    width      : 50vw;
+  }
+}
+	@media all and (min-width: 1200px) {
+	}
 }
 
 .nav__link {
   @include font-h3();
-  z-index: 2;
-	display        : flex;
-	justify-content: center;
-	align-items    : center;
-	border         : 1px solid black;
-	border-top     : 0;
-	height         : 25px;
-  width          : 33.333%;
-  background-color: $gray;
-	text-decoration: none;
+  margin    : 20px auto;
+  font-size : 2.2rem;
+  color     : $white;
 
-	&.nav__link-active,
-	&:hover {
-		background-color: $white;
-		border-bottom   : 0;
-		color           : $dark-red;
-		text-decoration : none;
+@media all and (max-height:500px) {
+  margin : 5px auto;
+}
+}
 
-		@media all and (min-width: 768px) {
-			border-bottom: 1px solid black;
-			color        : $dark-red;
+.nav__logo-menu {
+  z-index : 3;
+  display : block;
+  margin  : 50px 0 0;
+  width   : 100px;
+  opacity : 0.8;
 
-			@media all and (min-width: 1200px) {
-				border    : 0;
-				background: rgba(228, 228, 228, 0.4);
-			}
-		}
-	}
+}
 
-	&.nav__link-active {
-		cursor: default;
-	}
+.nav__logo-topBar {
+	display  : block;
+	position : fixed;
+	top      : 3px;
+	right    : 15px;
+	width    : 70px;
+	height   : auto;
 
 	@media all and (min-width: 768px) {
-		width: 100%;
-    height: 30px;
-		&.nav__link-active {
-			background-color: initial;
-			color           : $green;
-			cursor          : pointer;
-
-			&:hover {
-				background-color: $white;
-				color           : $dark-red;
-			}
-		}
-	}
-	@media all and (min-width: 1200px) {
-		@include font-h3--1200();
-		margin-top   : 37px;
-    border       : 0;
-    background-color     : $white;
-		padding-right: 70px;
-
-		@media all and (max-height: 360px) {
-			margin-top: 10px;
-		}
-
-	}
-}
-
-.nav__menu--title {
-	display: none;
-	cursor : pointer;
-
-	@media all and (min-width: 768px) {
-		@include font-h3();
-		z-index        : 3;
-		position       : fixed;
-		top            : 53px;
-		right          : 90px;
-		display        : flex;
-		align-items    : center;
-		justify-content: center;
-		border         : 1px solid black;
-		background     : $gray;
-		height         : 24px;
-		width          : 256px;
-		color          : $black;
-	}
-
-	@media all and (min-width: 1200px) {
-		display: none;
-	}
-
-}
-
-.nav__menu-title-hamburguer {
-	position    : absolute;
-	right       : 0;
-	border      : 1px solid black;
-	border-right: 0;
-	background  : $nipiter-red;
-	height      : 24px;
-	width       : 24px;
-	padding     : 5px;
-	color       : $white;
-}
-
-.nav__menu-title-hamburguer {
-	cursor: pointer;
-}
-
-.nav__AllLinks {
-	width: 100%;
-  display: flex;
-
-	@media all and (min-width: 1200px) {
-    flex-direction: column;
-    margin-top: 250px;
-	}
-}
-
-.nav__logo {
-	display : block;
-	position: fixed;
-	top     : 3px;
-	right   : 15px;
-	width   : 70px;
-	height  : auto;
-
-	@media all and (min-width: 768px) {
-		right    : auto;
-		left     : 50%;
-		transform: translate(-50%,0);
+		right     : auto;
+		left      : 50%;
+		transform : translate(-50%,0);
 
 	}
 
 	@media all and (min-width: 1200px) {
-		top    : 130px;
-		left   : $size--1200 + 100px;
-		display: block;
-		width  : 200px;
-		height : auto;
+		top     : 130px;
+		left    : $size--1200 + 100px;
+		display : block;
+		width   : 200px;
+		height  : auto;
 
 		@media all and (max-height: 490px) {
-			display: none;
+			display : none;
 		}
 
 		@media all and (max-height: 660px) {
-			width: 100px;
-			top  : 100px;
-			left : $size--1200 +90px;
+			width : 100px;
+			top   : 100px;
+			left  : $size--1200 +90px;
 			//display: none;
 		}
 	}

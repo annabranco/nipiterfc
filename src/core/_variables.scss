@@ -1,117 +1,119 @@
 //COLORS
-$nipiter-green: #158C3F;
-$green: #048e3c;
-$light-green: #C4E2CF;
-$nipiter-red: #e11b1c;
-$dark-red: #a11b1b;
-$black: #000000;
-$dark-gray: #4c4c4c;
-$gray: #e4e4e4;
-$white: #ffffff;
-$transparent-white: rgba(255, 255, 255, 0.59);
+$nipiter-green     : #158C3F;
+$green             : #048e3c;
+$light-green       : #C4E2CF;
+$nipiter-red       : #e11b1c;
+$dark-red          : #a11b1b;
+$black             : #000000;
+$dark-gray         : #4c4c4c;
+$gray              : #e4e4e4;
+$white             : #ffffff;
+$transparent-white : rgba(255, 255, 255, 0.59);
+$feminist-purple   : #2a1736;
 
-$twitter-blue: #5a8dbd;
-$facebook-blue: #184f83;
+$yellow        : #ffff73;
+$twitter-blue  : #5a8dbd;
+$facebook-blue : #184f83;
 
 // font-family
 @import url('https://fonts.googleapis.com/css?family=Averia+Sans+Libre|Averia+Serif+Libre|Barlow');
-$title: 'Barlow', sans-serif;
-$subtitle: 'Averia Sans Libre', sans-serif;
-$main: 'Averia Serif Libre', serif;
+$title    : 'Barlow',             sans-serif;
+$subtitle : 'Averia Sans Libre',  sans-serif;
+$main     : 'Averia Serif Libre', serif;
 
 // styles
 @mixin font-h1 {
-  font-family: $title;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: $transparent-white;
+  font-family : $title;
+  font-size   : 50px;
+  font-weight : 600;
+  line-height : 1.2;
+  color       : $transparent-white;
 }
 
 @mixin font-h1--1200 {
-  font-size: 80px;
-  line-height: 0.25;
+  font-size   : 80px;
+  line-height : 0.25;
 }
 
 @mixin font-h2 {
-  font-family: $title;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 0.78;
-  color: $nipiter_green;
+  font-family : $title;
+  font-size   : 18px;
+  font-weight : 600;
+  line-height : 0.78;
+  color       : $nipiter_green;
 }
 
 @mixin font-h2--1200 {
-  font-size: 21px;
-  line-height: 0.67;
+  font-size   : 21px;
+  line-height : 0.67;
 }
 
 @mixin font-h3 {
-  font-family: $subtitle;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  color: $nipiter_green;
+  font-family : $subtitle;
+  font-size   : 14px;
+  font-weight : bold;
+  line-height : 1;
+  color       : $nipiter_green;
 }
 
 @mixin font-h3--1200 {
-  font-size: 20px;
-  line-height: 0.7;
+  font-size   : 20px;
+  line-height : 0.7;
 }
 
 @mixin font-h4 {
-  font-family: $subtitle;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.67;
-  color: $dark-red;
+  font-family : $subtitle;
+  font-size   : 18px;
+  font-weight : bold;
+  line-height : 1.67;
+  color       : $dark-red;
 }
 
 @mixin font-h4--1200 {
-  font-size: 30px;
-  line-height: 1;
+  font-size   : 30px;
+  line-height : 1;
 }
 
 @mixin font-button {
-  font-size: 16px;
-  line-height: 0.88;
+  font-size   : 16px;
+  line-height : 0.88;
 }
 
 @mixin font-button--768 {
-  font-size: 24px;
-  line-height: 0.58;
+  font-size   : 24px;
+  line-height : 0.58;
 }
 
 @mixin font-button--1200 {
-  font-size: 30px;
-  line-height: 0.47;
+  font-size   : 30px;
+  line-height : 0.47;
 }
 
 @mixin font-p {
-  font-family: $main;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 2.14;
-  color: $dark-gray;
+  font-family : $main;
+  font-size   : 14px;
+  font-weight : bold;
+  line-height : 2.14;
+  color       : $dark-gray;
 }
 
 @mixin font-p--1200 {
-  font-size: 18px;
-  line-height: 1.67;
+  font-size   : 18px;
+  line-height : 1.67;
 }
 
 @mixin font-dorsal {
-  font-family: $title;
-  font-size: 18.5px;
-  font-weight: 600;
-  line-height: 1.35;
-  color: $white;
+  font-family : $title;
+  font-size   : 18.5px;
+  font-weight : 600;
+  line-height : 1.35;
+  color       : $white;
 }
 
 @mixin font-footer {
-  font-family: $title;
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 1.6;
-  color: $white;
+  font-family : $title;
+  font-size   : 10px;
+  font-weight : 500;
+  line-height : 1.6;
+  color       : $white;
 }
