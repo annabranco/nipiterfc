@@ -11,7 +11,7 @@ const Main = () => (
 
       <Switch>
         <Route exact path="/" component={ Home } />
-        <Route path="/news2" render={ () => <Wordpress page="news" /> } />
+        <Route path="/news" render={ () => <Wordpress page="news" /> } />
         <Route path="/players" component={ Players } />
         <Route path="/contact" render={ () => <Wordpress page="contact" /> } />
       </Switch>

@@ -1,0 +1,110 @@
+.footbal--field {
+  display : none;
+  
+  &.showDetails {
+    display          : block;
+    position         : relative;
+    margin-top       : 20px;
+    background-image : url('https://raw.githubusercontent.com/annabranco/nipiterfc/master/src/images/layout/footballField.jpg');
+    height           : 153px;
+    width            : 114px;
+  }
+}
+
+.outer__footbal--field {
+  position        : absolute;
+  right           : 10px;
+  bottom          : 10px;
+  display         : flex;
+  justify-content : center;
+}
+
+.footbal--field-position {
+	position        : absolute;
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	border          : 1px solid;
+	border-radius   : 20px;
+	background      : $dark-red;
+	height          : 28px;
+	width           : 28px;
+	font-size       : 17px;
+	color           : $white;
+}
+
+.position--GK {
+	bottom     : -10px;
+	left       : 43px;
+	background : $green;
+}
+
+.position--RWB {
+	bottom : 20px;
+	right  : 5px;
+}
+
+.position--FB {
+	bottom : 20px;
+	left   : 43px;
+}
+
+.position--LWB {
+	bottom : 20px;
+	left   : 5px;
+}
+
+.position--RM {
+	bottom : 63px;
+	right  : 5px;
+}
+
+.position--DM {
+	bottom : 38px;
+	left   : 43px;
+}
+
+.position--MF {
+	bottom : 63px;
+	left   : 43px;
+}
+
+.position--AM {
+	top  : 38px;
+	left : 43px;
+}
+
+.position--LM {
+	bottom : 63px;
+	left   : 5px;
+}
+
+.position--RW {
+	top   : 30px;
+	right : 10px;
+}
+
+.position--FW {
+	top  : 18px;
+	left : 43px;
+}
+
+.position--ST {
+	top  : 5px;
+	left : 43px;
+}
+
+.position--LW {
+	top  : 30px;
+	left : 10px;
+}
+
+.leftFocus {
+	left  : 28px;
+	right : auto;
+}
+
+.rightFocus {
+	left  : auto;
+	right : 28px;
+}

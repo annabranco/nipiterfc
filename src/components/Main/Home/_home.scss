@@ -8,12 +8,13 @@
 }
 
 .home__logo {
-  z-index : 3;
-  margin  : 160px auto 30px;
-  width   : 50%;
-  
+  z-index   : 3;
+  margin    : 10vh auto 30px;
+  width     : 50%;
+  max-width : 300px;
+
   @media all and (min-width: 500px) {
-    width : 50%;
+    margin : 15vh auto 50px;
   }
   @media all and (min-width: 700px) {
     width : 30%;
