@@ -18,6 +18,7 @@ import Player16 from '../../../images/players/shirts/16.png';
 import Player19 from '../../../images/players/shirts/19.png';
 import Player21 from '../../../images/players/shirts/21.png';
 import Player37 from '../../../images/players/shirts/37.png';
+import SquadPhoto from '../../../images/squad-bg.jpg';
 import PlayerInfo from './PlayerInfo/PlayerInfo';
 
 
@@ -58,7 +59,9 @@ class Players extends React.Component {
             toggleDetails={ this.toggleDetails }
           />
           :
-          <p>No player selected.</p>
+          <div className="squad__background-container">
+            <img src={ SquadPhoto } alt="Equipo de Ni Piter" className="squad__background"/>
+          </div>
         }
 
         <div className="shirts__container">

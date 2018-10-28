@@ -1,7 +1,7 @@
 $nav--1200-height: calc(100vh - 77px - 69px);
 
 .nav {
-	z-index    : 1;
+	z-index    : 2;
 	position   : fixed;
 	top        : 77px;
 	border-top : 1px solid $dark-red;
@@ -121,24 +121,5 @@ $nav--1200-height: calc(100vh - 77px - 69px);
 		left      : 50%;
 		transform : translate(-50%,0);
 
-	}
-
-	@media all and (min-width: 1200px) {
-		top     : 130px;
-		left    : $size--1200 + 100px;
-		display : block;
-		width   : 200px;
-		height  : auto;
-
-		@media all and (max-height: 490px) {
-			display : none;
-		}
-
-		@media all and (max-height: 660px) {
-			width : 100px;
-			top   : 100px;
-			left  : $size--1200 +90px;
-			//display: none;
-		}
 	}
 }
